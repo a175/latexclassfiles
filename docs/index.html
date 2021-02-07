@@ -1,6 +1,8 @@
 <html>
   <head>
     <meta content="text/html" charset="UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" type="text/css" href="./list.css" />
     <title>List of LaTeX cls files</title>
   </head>
 <body>
@@ -8,6 +10,7 @@
 <p><code>\documentclass</code>で指定できるclsファイルのリスト (網羅的ではない).</p>
 
 <h2>用途による分類</h2>
+<p>便宜上, Book系(両面印刷, 長文), Report系(片面印刷, 長文), Article系, Slide系, Letter系, Proc系, 特定の雑誌の投稿用, 特殊用途, CV, Misc に分類している.</p>
 <h3>Book系</h3>
 <p>長い文書.  両面印刷を想定しており, 各章は奇数ページで始まるなどの特徴がある.</p>
 <p>
@@ -39,8 +42,8 @@
     <code>\subsubsection</code>
     <code>\paragraph</code>
     <code>\subparagraph</code>
-    (ただし, sectionのナンバリングはChapter.Sectionという形式ではなく,
-    Section単体の形式がデフォルト.)
+    (ただし, sectionのナンバリングはChapter.Section...という形式ではなく,
+    Section.Subsection..の形式がデフォルト.  Chapterをまたいで引用する際は注意が必要.)
   </dd>
 
   
@@ -58,7 +61,7 @@
   </dd>
 
   <dt>extbook</dt>
-  <dd><code>./tex/latex/extsizes:extbook.cls</code></dd>
+  <dd><code>./tex/latex/extsizes/extbook.cls</code></dd>
   <dd>フォントサイズの設定が多い. 8--20pt.  基本的に標準のbookと同じ.</dd>
   <dd>使える文章構造は, 次:
     <code>\part</code>
@@ -83,7 +86,7 @@
     <code>\subparagraph</code>
   </dd>
 
-  <dt>bookest.cls</dt>
+  <dt>bookest</dt>
   <dd><code>./tex/latex/bookest/bookest.cls</code></dd>
   <dd>雰囲気が標準のbookとはかなり異なる.</dd>
   <dd>使える文章構造は, 次:
@@ -161,7 +164,7 @@
 
 
 <h4>日本語用</h4>
-<h6>jsbook</h6>
+<h5>jsbook</h5>
 <p>日本語の標準的なbook</p>
 <p>使える文章構造は, 次:
   <code>\part</code>
@@ -181,13 +184,14 @@
   <dd><code>./tex/luatex/luatexja/ltjsbook.cls</code></dd>
   <dd>LuaTeX用</dd>
   
-  <dt>bxjsbook.cls</dt>
-  <dd><code>./tex/latex/bxjscls:bxjsbook.cls</code></dd>
+  <dt>bxjsbook</dt>
+  <dd><code>./tex/latex/bxjscls/bxjsbook.cls</code></dd>
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
 <h5>jbook</h5>
-<p>今は使わないほうがよいと思われる日本語の昔のbook</p>
+<p>昔の日本語のbook.</p>
+<p>特別な事情がなければ, 今は使わないほうがよい.</p>
 <p>使える文章構造は, 次:
   <code>\part</code>
   <code>\chapter</code>
@@ -293,7 +297,7 @@
   </dd>
 
   <dt>extreport</dt>
-  <dd><code>./tex/latex/extsizes:extreport.cls</code></dd>
+  <dd><code>./tex/latex/extsizes/extreport.cls</code></dd>
   <dd>フォントサイズの設定が多い. 8--20pt. ほぼreportと一緒.</dd>
   <dd>使える文章構造は, 次:
     <code>\part</code>
@@ -318,8 +322,8 @@
     <code>\subparagraph</code>
   </dd>
 
-  <dt>rapport1.cls</dt>
-  <dd><code>./tex/latex/ntgclass:rapport1.cls</code></dd>
+  <dt>rapport1</dt>
+  <dd><code>./tex/latex/ntgclass/rapport1.cls</code></dd>
   <dd>ドイツ語用のクラスファイルファイルらしいが, 基本的に英語</dd>
   <dd>使える文章構造は, 次:
     <code>\part</code>
@@ -332,8 +336,8 @@
   </dd>
 
 
-  <dt>rapport3.cls</dt>
-  <dd><code>./tex/latex/ntgclass:rapport3.cls</code></dd>
+  <dt>rapport3</dt>
+  <dd><code>./tex/latex/ntgclass/rapport3.cls</code></dd>
   <dd>ドイツ語用のクラスファイルファイルらしいが, 基本的に英語</dd>
   <dd>使える文章構造は, 次:
     <code>\part</code>
@@ -364,20 +368,21 @@
 </p>
 <dl>
   <dt>jsreport</dt>
-  <dd><code>./tex/platex/jsclasses:jsreport.cls</code></dd>
+  <dd><code>./tex/platex/jsclasses/jsreport.cls</code></dd>
   <dd>日本語用のreport</dd>
 
   <dt>ltjsreport</dt>
   <dd><code>./tex/luatex/luatexja/ltjsreport.cls</code></dd>
   <dd>LuaTeX用</dd>
   
-  <dt>bxjsreport.cls</dt>
-  <dd><code>./tex/latex/bxjscls:bxjsreport.cls</code></dd>
+  <dt>bxjsreport</dt>
+  <dd><code>./tex/latex/bxjscls/bxjsreport.cls</code></dd>
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
 <h5>jreport</h5>
-<p>今は使わないほうがよいとされている日本語の昔のreport</p>
+<p>昔の日本語のreport.</p>
+<p>特別な事情がなければ, 今は使わないほうがよい.</p>
 <p>使える文章構造は, 次:
   <code>\part</code>
   <code>\chapter</code>
@@ -429,7 +434,7 @@
 <h4>その他の言語</h4>
 <dl>
   <dt>ctexrep</dt>
-  <dd><code>./tex/latex/ctex:ctexrep.cls</code></dd>
+  <dd><code>./tex/latex/ctex/ctexrep.cls</code></dd>
   <dd>中国語</dd>
   <dd><code>fandol</code>というフォントが必要.</dd>
 </dl>
@@ -449,16 +454,16 @@
   <dd>Article</dd>
 
   <dt>extarticle</dt>
-  <dd><code>./tex/latex/extsizes:extarticle.cls</code></dd>
+  <dd><code>./tex/latex/extsizes/extarticle.cls</code></dd>
   <dd>article</dd>
   <dd>フォントサイズの設定が多い. 8--20pt</dd>
 
-  <dt>tufte-handout.cls</dt>
-  <dd><code>./tex/latex/tufte-latex:tufte-handout.cls</code></dd>
+  <dt>tufte-handout</dt>
+  <dd><code>./tex/latex/tufte-latex/tufte-handout.cls</code></dd>
   <dd>Edward Tufte風. hand out</dd>
 
-  <dt>scrartcl.cls</dt>
-  <dd><code>./tex/latex/koma-script:scrartcl.cls</code></dd>
+  <dt>scrartcl</dt>
+  <dd><code>./tex/latex/koma-script/scrartcl.cls</code></dd>
   <dd>article</dd>
   
   <dt>elegantpaper</dt>
@@ -476,12 +481,21 @@
   <dd><code>./tex/luatex/luatexja/ltjsarticle.cls</code></dd>
   <dd>LuaTeX用</dd>
 
-  <dt>bxjsarticle.cls</dt>
-  <dd><code>./tex/latex/bxjscls:bxjsarticle.cls</code></dd>
+  <dt>bxjsarticle</dt>
+  <dd><code>./tex/latex/bxjscls/bxjsarticle.cls</code></dd>
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
+<h5>jlreq</h5>
+<dl>
+  <dt>jlreq</dt>
+  <dd><code>./tex/latex/jlreq/jlreq.cls</code></dd>  
+  <dd>日本語組版処理の要件を満たす日本語ドキュメントクラス</dd>
+</dl>
+
 <h5>jarticle</h5>
+<p>昔の日本語のarticle.</p>
+<p>特別な事情がなければ, 今は使わないほうがよい.</p>
 <dl>
   <dt>jarticle</dt>
   <dd><code>./tex/platex/base/jarticle.cls</code></dd>
@@ -496,7 +510,7 @@
   <dd>LuaTeX用</dd>
 </dl>
 
-<h4>tarticle</h4>
+<h5>tarticle</h5>
 <dl>
   <dt>tarticle</dt>
   <dd><code>./tex/platex/base/tarticle.cls</code></dd>
@@ -511,36 +525,30 @@
   <dd>LuaTeX用</dd>
 </dl>
 
-<h4>jlreq</h4>
-<dl>
-  <dt>jlreq</dt>
-  <dd><code>./tex/latex/jlreq/jlreq.cls</code></dd>  
-  <dd>日本語組版処理の要件を満たす日本語ドキュメントクラス</dd>
-</dl>
 
 <h4>その他の言語</h4>
 <dl>
-  <dt>artikel1.cls</dt>
-  <dd><code>./tex/latex/ntgclass:artikel1.cls</code></dd>
+  <dt>artikel1</dt>
+  <dd><code>./tex/latex/ntgclass/artikel1.cls</code></dd>
   <dd>ドイツ語</dd>
   <dd>Article</dd>
   
-  <dt>artikel2.cls</dt>
-  <dd><code>./tex/latex/ntgclass:artikel2.cls</code></dd>
+  <dt>artikel2</dt>
+  <dd><code>./tex/latex/ntgclass/artikel2.cls</code></dd>
   <dd>ドイツ語</dd>
   <dd>Article</dd>
 
-  <dt>artikel3.cls</dt>
-  <dd><code>./tex/latex/ntgclass:artikel3.cls</code></dd>
+  <dt>artikel3</dt>
+  <dd><code>./tex/latex/ntgclass/artikel3.cls</code></dd>
   <dd>ドイツ語</dd>
   <dd>Article</dd>
 
-  <dt>barticle.cls</dt>
-  <dd><code>./tex/latex/bangtex:barticle.cls</code></dd>
+  <dt>barticle</dt>
+  <dd><code>./tex/latex/bangtex/barticle.cls</code></dd>
   <dd>ベンガル語アッサム語 article</dd>
 
   <dt>ctexart</dt>
-  <dd><code>./tex/latex/ctex:ctexart.cls</code></dd>
+  <dd><code>./tex/latex/ctex/ctexart.cls</code></dd>
   <dd>中国語</dd>
 </dl>
 
@@ -553,14 +561,14 @@
 </dl>
 <h4>日本語</h4>
 <dl>
-  <dt>bxjsslide.cls</dt>
+  <dt>bxjsslide</dt>
   <dd><code>./tex/latex/bxjscls/bxjsslide.cls</code></dd>
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 <h4>その他の言語</h4>
 <dl>
   <dt>ctexbeamer</dt>
-  <dd><code>./tex/latex/ctex:ctexbeamer.cls</code></dd>
+  <dd><code>./tex/latex/ctex/ctexbeamer.cls</code></dd>
   <dd>中国語</dd>
 </dl>
 
@@ -572,25 +580,25 @@
   <dd>Letter</dd>
 
   <dt>extletter</dt>
-  <dd><code>./tex/latex/extsizes:extletter.cls</code></dd>
+  <dd><code>./tex/latex/extsizes/extletter.cls</code></dd>
   <dd>letter</dd>
   <dd>フォントサイズの設定が多い. 8--20pt</dd>
 
-  <dt>scrlttr2.cls</dt>
-  <dd><code>./tex/latex/koma-script:scrlttr2.cls</code></dd>
+  <dt>scrlttr2</dt>
+  <dd><code>./tex/latex/koma-script/scrlttr2.cls</code></dd>
   <dd>letter</dd>
 
 </dl>
 
 <h4>その他の言語</h4>
 <dl>
-  <dt>brief.cls</dt>
-  <dd><code>./tex/latex/ntgclass:brief.cls</code></dd>
+  <dt>brief</dt>
+  <dd><code>./tex/latex/ntgclass/brief.cls</code></dd>
   <dd>ドイツ語</dd>
   <dd>letter</dd>
 
-  <dt>bletter.cls</dt>
-  <dd><code>./tex/latex/bangtex:bletter.cls</code></dd>
+  <dt>bletter</dt>
+  <dd><code>./tex/latex/bangtex/bletter.cls</code></dd>
   <dd>ベンガル語アッサム語 letter</dd>
 </dl>
 
@@ -606,15 +614,15 @@
   <dd>proc</dd>
 
   <dt>extproc</dt>
-  <dd><code>./tex/latex/extsizes:extproc.cls</code></dd>
+  <dd><code>./tex/latex/extsizes/extproc.cls</code></dd>
   <dd>proc</dd>
   <dd>フォントサイズの設定が多い. 8--20pt</dd>
   
   <dt>labbook</dt>
   <dd><code>./tex/latex/labbook/labbook.cls</code></dd>
 
-  <dt>abstbook.cls</dt>
-  <dd><code>./tex/latex/ltxmisc:abstbook.cls</code></dd>
+  <dt>abstbook</dt>
+  <dd><code>./tex/latex/ltxmisc/abstbook.cls</code></dd>
   <dd>研究集会のアブストラクト集</dd>
 </dl>
 
@@ -671,8 +679,8 @@
   <dd><code>./tex/latex/amscls/amsdtx.cls</code></dd>
   <dd>AMSLaTeXのdtx用</dd>
 
-  <dt>lltxdoc.cls</dt>
-  <dd><code>./doc/lualatex/luamesh:lltxdoc.cls</code></dd>
+  <dt>lltxdoc</dt>
+  <dd><code>./doc/lualatex/luamesh/lltxdoc.cls</code></dd>
   <dd>LuaTeX</dd>
   
   <dt>jltxdoc</dt>
@@ -684,18 +692,18 @@
   <dd>LuaTeX用jltxdoc</dd>
 
   <dt>ctxdoc</dt>
-  <dd><code>./tex/latex/ctex:ctxdoc.cls</code></dd>
+  <dd><code>./tex/latex/ctex/ctxdoc.cls</code></dd>
   <dd>中国語</dd>
 
-  <dt>scrdoc.cls</dt>
-  <dd><code>./tex/latex/koma-script:scrdoc.cls</code></dd>
+  <dt>scrdoc</dt>
+  <dd><code>./tex/latex/koma-script/scrdoc.cls</code></dd>
   <dd>通常使わない</dd>
 </dl>
 
 <h3>CV</h3>
 <dl>
-  <dt>simplecv.cls</dt>
-  <dd><code>./tex/latex/simplecv:simplecv.cls</code></dd>
+  <dt>simplecv</dt>
+  <dd><code>./tex/latex/simplecv/simplecv.cls</code></dd>
   <dd>CV</dd>
   
   <dt>komacv</dt>
@@ -744,12 +752,12 @@
   <dd><code>./tex/latex/bookcover/bookcover.cls</code></dd>
   <dd>表紙, 裏表紙, 背表紙</dd>
   
-  <dt>RecipeBook.cls</dt>
-  <dd><code>./tex/latex/recipebook:RecipeBook.cls</code></dd>
+  <dt>RecipeBook</dt>
+  <dd><code>./tex/latex/recipebook/RecipeBook.cls</code></dd>
   <dd>5.5 x 8 (inch) サイズのレシピ本<dd>
     
-  <dt>recipecard.cls</dt>
-  <dd><code>./tex/latex/recipecard:recipecard.cls</code></dd>
+  <dt>recipecard</dt>
+  <dd><code>./tex/latex/recipecard/recipecard.cls</code></dd>
   <dd>レシピカード<dd>
 </dl>
 
@@ -772,12 +780,12 @@
   <dd><code>./tex/latex/amscls/amsldoc.cls</code></dd>
   <dd>AMSLaTeXのドキュメントamsldoc用のクラス</dd>
   
-  <dt>amsproc.cls</dt>
-  <dd><code>./tex/latex/amscls:amsproc.cls</code></dd>
+  <dt>amsproc</dt>
+  <dd><code>./tex/latex/amscls/amsproc.cls</code></dd>
   <dd>報告集などの雛形</dd>  
 </dl>
 
-<h4>Base</h4>
+<h3>Base</h3>
 <dl>
   <dt>article</dt>
   <dd><code>./tex/latex/base/article.cls</code></dd>
@@ -825,23 +833,23 @@
 <p>フォントサイズの設定が多い. 8--20pt</p>
 <dl>
   <dt>extarticle</dt>
-  <dd><code>./tex/latex/extsizes:extarticle.cls</code></dd>
+  <dd><code>./tex/latex/extsizes/extarticle.cls</code></dd>
   <dd>article</dd>
   
   <dt>extbook</dt>
-  <dd><code>./tex/latex/extsizes:extbook.cls</code></dd>
+  <dd><code>./tex/latex/extsizes/extbook.cls</code></dd>
   <dd>book</dd>
   
   <dt>extletter</dt>
-  <dd><code>./tex/latex/extsizes:extletter.cls</code></dd>
+  <dd><code>./tex/latex/extsizes/extletter.cls</code></dd>
   <dd>letter</dd>
   
   <dt>extproc</dt>
-  <dd><code>./tex/latex/extsizes:extproc.cls</code></dd>
+  <dd><code>./tex/latex/extsizes/extproc.cls</code></dd>
   <dd>proc</dd>
   
   <dt>extreport</dt>
-  <dd><code>./tex/latex/extsizes:extreport.cls</code></dd>
+  <dd><code>./tex/latex/extsizes/extreport.cls</code></dd>
   <dd>report</dd>
   
 </dl>
@@ -860,39 +868,39 @@
 
 <h3>Tufte LaTeX classes</h3>
 <dl>
-  <dt>tufte-book.cls</dt>
-  <dd><code>./tex/latex/tufte-latex:tufte-book.cls</code></dd>
+  <dt>tufte-book</dt>
+  <dd><code>./tex/latex/tufte-latex/tufte-book.cls</code></dd>
   <dd>Edward Tufte風. book</dd>
   
-  <dt>tufte-handout.cls</dt>
-  <dd><code>./tex/latex/tufte-latex:tufte-handout.cls</code></dd>
+  <dt>tufte-handout</dt>
+  <dd><code>./tex/latex/tufte-latex/tufte-handout.cls</code></dd>
   <dd>Edward Tufte風. hand out</dd>
 </dl>
 
 <h3>Koma script系</h3>
 <dl>
-  <dt>scrartcl.cls</dt>
-  <dd><code>./tex/latex/koma-script:scrartcl.cls</code></dd>
+  <dt>scrartcl</dt>
+  <dd><code>./tex/latex/koma-script/scrartcl.cls</code></dd>
   <dd>article</dd>
   
-  <dt>scrbook.cls</dt>
-  <dd><code>./tex/latex/koma-script:scrbook.cls</code></dd>
+  <dt>scrbook</dt>
+  <dd><code>./tex/latex/koma-script/scrbook.cls</code></dd>
   <dd>book</dd>
 
-  <dt>scrdoc.cls</dt>
-  <dd><code>./tex/latex/koma-script:scrdoc.cls</code></dd>
+  <dt>scrdoc</dt>
+  <dd><code>./tex/latex/koma-script/scrdoc.cls</code></dd>
   <dd>通常使わない</dd>
 
-  <dt>scrlttr2.cls</dt>
-  <dd><code>./tex/latex/koma-script:scrlttr2.cls</code></dd>
+  <dt>scrlttr2</dt>
+  <dd><code>./tex/latex/koma-script/scrlttr2.cls</code></dd>
   <dd>letter</dd>
 
-  <dt>scrreprt.cls</dt>
-  <dd><code>./tex/latex/koma-script:scrreprt.cls</code></dd>
+  <dt>scrreprt</dt>
+  <dd><code>./tex/latex/koma-script/scrreprt.cls</code></dd>
   <dd>report</dd>
 
-  <dt>komacv.cls</dt>
-  <dd><code>./tex/latex/komacv:komacv.cls</code></dd>
+  <dt>komacv</dt>
+  <dd><code>./tex/latex/komacv/komacv.cls</code></dd>
   <dd>CV</dd>
 
   <dt>scrguide</dt>
@@ -903,7 +911,7 @@
 <h4>jsarticle</h4>
 <dl>
   <dt>jsarticle</dt>
-  <dd><code>./tex/platex/jsclasses:jsarticle.cls</code></dd>
+  <dd><code>./tex/platex/jsclasses/jsarticle.cls</code></dd>
   <dd>日本語用のarticle</dd>
   
   <dt>ltjsarticle</dt>
@@ -911,30 +919,30 @@
   <dd>LuaTeX用</dd>
 
 
-  <dt>bxjsarticle.cls</dt>
-  <dd><code>./tex/latex/bxjscls:bxjsarticle.cls</code></dd>
+  <dt>bxjsarticle</dt>
+  <dd><code>./tex/latex/bxjscls/bxjsarticle.cls</code></dd>
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
 <h4>jsbook</h4>
 <dl>
   <dt>jsbook</dt>
-  <dd><code>./tex/platex/jsclasses:jsbook.cls</code></dd>
+  <dd><code>./tex/platex/jsclasses/jsbook.cls</code></dd>
   <dd>日本語用のbook</dd>
 
   <dt>ltjsbook</dt>
   <dd><code>./tex/luatex/luatexja/ltjsbook.cls</code></dd>
   <dd>LuaTeX用</dd>
   
-  <dt>bxjsbook.cls</dt>
-  <dd><code>./tex/latex/bxjscls:bxjsbook.cls</code></dd>
+  <dt>bxjsbook</dt>
+  <dd><code>./tex/latex/bxjscls/bxjsbook.cls</code></dd>
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
 <h4>jsreport</h4>
 <dl>
   <dt>jsreport</dt>
-  <dd><code>./tex/platex/jsclasses:jsreport.cls</code></dd>
+  <dd><code>./tex/platex/jsclasses/jsreport.cls</code></dd>
   <dd>日本語用のreport</dd>
 
   <dt>ltjsreport</dt>
@@ -942,7 +950,7 @@
   <dd>LuaTeX用</dd>
   
   <dt>bxjsreport.cls</dt>
-  <dd><code>./tex/latex/bxjscls:bxjsreport.cls</code></dd>
+  <dd><code>./tex/latex/bxjscls/bxjsreport.cls</code></dd>
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
@@ -970,83 +978,6 @@
   <dd>LuaTeX用</dd>
 </dl>
 
-<h3>Misc (日本語)</h3>
-<dl>
-  <dt>jlreq</dt>
-  <dd><code>./tex/latex/jlreq/jlreq.cls</code></dd>  
-  <dd>日本語組版処理の要件を満たす日本語ドキュメントクラス</dd>
-</dl>
-
-<h3>Misc</h3>
-<dl>
-  <dt>ycbook</dt>
-  <dd><code>./tex/latex/ycbook/ycbook.cls</code></dd>
-  <dd>book</dd>
-  
-  <dt>labbook</dt>
-  <dd><code>./tex/latex/labbook/labbook.cls</code></dd>
-  <dd>book</dd>
-
-  <dt>bookest</dt>
-  <dd><code>./tex/latex/bookest/bookest.cls</code></dd>
-  <dd>book</dd>
-
-  <dt>caesar_book</dt>
-  <dd><code>./tex/latex/sidenotes/caesar_book.cls</code></dd>
-  <dd>Sidenote.styを使用. 傍註が広い. book.</dd>
-
-  <dt>lltxdoc</dt>
-  <dd><code>./doc/lualatex/luamesh:lltxdoc.cls</code></dd>
-  <dd>LuaTeX</dd>
-
-  <dt>bookcover</dt>
-  <dd><code>./tex/latex/bookcover/bookcover.cls</code></dd>
-  <dd>表紙, 裏表紙, 背表紙</dd>
-
-  <dt>abstbook</dt>
-  <dd><code>./tex/latex/ltxmisc/abstbook.cls</code></dd>
-  <dd>研究集会のアブストラクト集</dd>
-
-  <dt>RecipeBook.cls</dt>
-  <dd><code>./tex/latex/recipebook:RecipeBook.cls</code></dd>
-  <dd>5.5 x 8 (inch) サイズのレシピ本<dd>
-    
-  <dt>recipecard.cls</dt>
-  <dd><code>./tex/latex/recipecard:recipecard.cls</code></dd>
-  <dd>レシピカード<dd>
-
-  <dt>simplecv.cls</dt>
-  <dd><code>./tex/latex/simplecv:simplecv.cls</code></dd>
-  <dd>CV</dd>
-
-  <dt>cv4tw</dt>
-  <dd><code>./tex/latex/cv4tw/cv4tw.cls</code></dd>
-  <dd>SNS風CV</dd>
-
-  <dt>ecv.cls</dt>
-  <dd><code>./tex/latex/ecv:ecv.cls</code></dd>
-  <dd>CV</dd>
-
-  <dt>harnon-cv</dt>
-  <dd><code>./tex/latex/harnon-cv/harnon-cv.cls</code></dd>
-  <dd>CV</dd>
-
-  <dt>moderncv</dt>
-  <dd><code>./tex/latex/moderncv/moderncv.cls</code></dd>
-  <dd>CV</dd>
-
-  <dt>mycv</dt>
-  <dd><code>./tex/latex/mycv/mycv.cls</code></dd>
-  <dd>CV</dd>
-
-  <dt>europasscv</dt>
-  <dd><code>./tex/latex/europasscv/europasscv.cls</code></dd>
-  <dd>2013ver Europass CV</dd>
-
-  <dt>europecv</dt>
-  <dd><code>./tex/latex/europecv/europecv.cls</code></dd>
-  <dd>CV</dd>
-</dl>
 
 <h3>Japanese classes</h3>
 <h4>jbook</h4>
@@ -1224,7 +1155,7 @@
   <dd>中国語</dd>
 </dl>
 
-<h4>Bang TeX classes</h4>
+<h3>Bang TeX classes</h3>
 <dl>
   <dt>barticle.cls</dt>
   <dd><code>./tex/latex/bangtex:barticle.cls</code></dd>
@@ -1239,6 +1170,85 @@
   <dd>ベンガル語アッサム語 letter</dd>
 
 </dl>
+
+<h3>Misc (日本語)</h3>
+<dl>
+  <dt>jlreq</dt>
+  <dd><code>./tex/latex/jlreq/jlreq.cls</code></dd>  
+  <dd>日本語組版処理の要件を満たす日本語ドキュメントクラス</dd>
+</dl>
+
+<h3>Misc</h3>
+<dl>
+  <dt>ycbook</dt>
+  <dd><code>./tex/latex/ycbook/ycbook.cls</code></dd>
+  <dd>book</dd>
+  
+  <dt>labbook</dt>
+  <dd><code>./tex/latex/labbook/labbook.cls</code></dd>
+  <dd>book</dd>
+
+  <dt>bookest</dt>
+  <dd><code>./tex/latex/bookest/bookest.cls</code></dd>
+  <dd>book</dd>
+
+  <dt>caesar_book</dt>
+  <dd><code>./tex/latex/sidenotes/caesar_book.cls</code></dd>
+  <dd>Sidenote.styを使用. 傍註が広い. book.</dd>
+
+  <dt>lltxdoc</dt>
+  <dd><code>./doc/lualatex/luamesh:lltxdoc.cls</code></dd>
+  <dd>LuaTeX</dd>
+
+  <dt>bookcover</dt>
+  <dd><code>./tex/latex/bookcover/bookcover.cls</code></dd>
+  <dd>表紙, 裏表紙, 背表紙</dd>
+
+  <dt>abstbook</dt>
+  <dd><code>./tex/latex/ltxmisc/abstbook.cls</code></dd>
+  <dd>研究集会のアブストラクト集</dd>
+
+  <dt>RecipeBook</dt>
+  <dd><code>./tex/latex/recipebook/RecipeBook.cls</code></dd>
+  <dd>5.5 x 8 (inch) サイズのレシピ本<dd>
+    
+  <dt>recipecard</dt>
+  <dd><code>./tex/latex/recipecard/recipecard.cls</code></dd>
+  <dd>レシピカード<dd>
+
+  <dt>simplecv</dt>
+  <dd><code>./tex/latex/simplecv/simplecv.cls</code></dd>
+  <dd>CV</dd>
+
+  <dt>cv4tw</dt>
+  <dd><code>./tex/latex/cv4tw/cv4tw.cls</code></dd>
+  <dd>SNS風CV</dd>
+
+  <dt>ecv</dt>
+  <dd><code>./tex/latex/ecv/ecv.cls</code></dd>
+  <dd>CV</dd>
+
+  <dt>harnon-cv</dt>
+  <dd><code>./tex/latex/harnon-cv/harnon-cv.cls</code></dd>
+  <dd>CV</dd>
+
+  <dt>moderncv</dt>
+  <dd><code>./tex/latex/moderncv/moderncv.cls</code></dd>
+  <dd>CV</dd>
+
+  <dt>mycv</dt>
+  <dd><code>./tex/latex/mycv/mycv.cls</code></dd>
+  <dd>CV</dd>
+
+  <dt>europasscv</dt>
+  <dd><code>./tex/latex/europasscv/europasscv.cls</code></dd>
+  <dd>2013ver Europass CV</dd>
+
+  <dt>europecv</dt>
+  <dd><code>./tex/latex/europecv/europecv.cls</code></dd>
+  <dd>CV</dd>
+</dl>
+
 
 <h2>未整理のもの</h2>
 <!-- @@@@ -->
