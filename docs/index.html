@@ -21,6 +21,10 @@
   <dd>book</dd>
   <dd>フォントサイズの設定が多い. 8--20pt</dd>
 
+  <dt>scrbook.cls</dt>
+  <dd><code>./tex/latex/koma-script:scrbook.cls</code></dd>
+  <dd>book</dd>
+
   <dt>ycbook</dt>
   <dd><code>./tex/latex/ycbook/ycbook.cls</code></dd>
 
@@ -33,6 +37,10 @@
 
   <dt>bookest.cls</dt>
   <dd><code>./tex/latex/bookest:bookest.cls</code></dd>
+
+  <dt>caesar_book.cls</dt>
+  <dd><code>./tex/latex/sidenotes:caesar_book.cls</code></dd>
+  <dd>Sidenote.styを使用. 傍註が広い.</dd>
 </dl>
 
 
@@ -103,6 +111,11 @@
   <dd><code>./tex/latex/extsizes:extreport.cls</code></dd>
   <dd>report</dd>
   <dd>フォントサイズの設定が多い. 8--20pt</dd>
+
+  <dt>scrreprt</dt>
+  <dd><code>./tex/latex/koma-script/scrreprt.cls</code></dd>
+  <dd>report</dd>
+
   <dt>elegantnote</dt>
   <dd><code>./tex/latex/elegantnote/elegantnote.cls</code></dd>
 </dl>
@@ -179,6 +192,10 @@
   <dd><code>./tex/latex/tufte-latex:tufte-handout.cls</code></dd>
   <dd>Edward Tufte風. hand out</dd>
 
+  <dt>scrartcl.cls</dt>
+  <dd><code>./tex/latex/koma-script:scrartcl.cls</code></dd>
+  <dd>article</dd>
+  
   <dt>elegantpaper</dt>
   <dd><code>./tex/latex/elegantpaper/elegantpaper.cls</code></dd>
 </dl>
@@ -268,6 +285,11 @@
   <dd><code>./tex/latex/extsizes:extletter.cls</code></dd>
   <dd>letter</dd>
   <dd>フォントサイズの設定が多い. 8--20pt</dd>
+
+  <dt>scrlttr2.cls</dt>
+  <dd><code>./tex/latex/koma-script:scrlttr2.cls</code></dd>
+  <dd>letter</dd>
+
 </dl>
 
 <h4>その他の言語</h4>
@@ -324,6 +346,14 @@
 
 <h3>特殊用途</h3>
 
+<h4>CV</h4>
+<dl>
+  <dt>komacv</dt>
+  <dd><code>./tex/latex/komacv/komacv.cls</code></dd>
+  <dd>CV</dd>
+</dl>
+
+
 <h4>dtx</h4>
 <dl>
   <dt>amsdtx</dt>
@@ -345,6 +375,10 @@
   <dt>ctxdoc</dt>
   <dd><code>./tex/latex/ctex:ctxdoc.cls</code></dd>
   <dd>中国語</dd>
+
+  <dt>scrdoc.cls</dt>
+  <dd><code>./tex/latex/koma-script:scrdoc.cls</code></dd>
+  <dd>通常使わない</dd>
 </dl>
 
 
@@ -402,7 +436,7 @@
   
 </dl>
 
-<h4>Elegant LaTeX classes</h4>
+<h3>Elegant LaTeX classes</h3>
 <dl>
   <dt>elegantbook</dt>
   <dd><code>./tex/latex/elegantbook/elegantbook.cls</code></dd>
@@ -414,7 +448,7 @@
   <dd><code>./tex/latex/elegantpaper/elegantpaper.cls</code></dd>
 </dl>
 
-<h4>Tufte LaTeX classes</h4>
+<h3>Tufte LaTeX classes</h3>
 <dl>
   <dt>tufte-book.cls</dt>
   <dd><code>./tex/latex/tufte-latex:tufte-book.cls</code></dd>
@@ -423,6 +457,34 @@
   <dt>tufte-handout.cls</dt>
   <dd><code>./tex/latex/tufte-latex:tufte-handout.cls</code></dd>
   <dd>Edward Tufte風. hand out</dd>
+</dl>
+
+<h3>Koma script系</h3>
+<dl>
+  <dt>scrartcl.cls</dt>
+  <dd><code>./tex/latex/koma-script:scrartcl.cls</code></dd>
+  <dd>article</dd>
+  
+  <dt>scrbook.cls</dt>
+  <dd><code>./tex/latex/koma-script:scrbook.cls</code></dd>
+  <dd>book</dd>
+
+  <dt>scrdoc.cls</dt>
+  <dd><code>./tex/latex/koma-script:scrdoc.cls</code></dd>
+  <dd>通常使わない</dd>
+
+  <dt>scrlttr2.cls</dt>
+  <dd><code>./tex/latex/koma-script:scrlttr2.cls</code></dd>
+  <dd>letter</dd>
+
+  <dt>scrreprt.cls</dt>
+  <dd><code>./tex/latex/koma-script:scrreprt.cls</code></dd>
+  <dd>report</dd>
+
+  <dt>komacv.cls</dt>
+  <dd><code>./tex/latex/komacv:komacv.cls</code></dd>
+  <dd>CV</dd>
+
 </dl>
 
 <h3>JS classes系統</h3>
@@ -513,9 +575,13 @@
   <dd><code>./tex/latex/labbook/labbook.cls</code></dd>
   <dd>book</dd>
 
-  <dt>bookest.cls</dt>
-  <dd><code>./tex/latex/bookest:bookest.cls</code></dd>
+  <dt>bookest</dt>
+  <dd><code>./tex/latex/bookest/bookest.cls</code></dd>
   <dd>book</dd>
+
+  <dt>caesar_book</dt>
+  <dd><code>./tex/latex/sidenotes/caesar_book.cls</code></dd>
+  <dd>Sidenote.styを使用. 傍註が広い. book.</dd>
 
   <dt>lltxdoc</dt>
   <dd><code>./doc/lualatex/luamesh:lltxdoc.cls</code></dd>
@@ -674,8 +740,12 @@
 
 <h2>未整理のもの</h2>
 <!-- @@@@ -->
-<h4></h4>
+<h4>Koma script系</h4>
 <dl>
+  <dt>komacv.cls</dt>
+  <dd><code>./tex/latex/komacv:komacv.cls</code></dd>
+  <dd>CV</dd>
+
 </dl>
 
 
@@ -765,7 +835,6 @@
 
   <dt>bookcover.cls</dt>
     <dd><code>./tex/latex/bookcover:bookcover.cls</code></dd>
-
 
   <dt>cd.cls</dt>
     <dd><code>./tex/latex/cd:cd.cls</code></dd>
@@ -943,24 +1012,6 @@
 
   <dt>knittingpattern.cls</dt>
     <dd><code>./tex/latex/knittingpattern:knittingpattern.cls</code></dd>
-
-  <dt>scrartcl.cls</dt>
-    <dd><code>./tex/latex/koma-script:scrartcl.cls</code></dd>
-
-  <dt>scrbook.cls</dt>
-    <dd><code>./tex/latex/koma-script:scrbook.cls</code></dd>
-
-  <dt>scrdoc.cls</dt>
-    <dd><code>./tex/latex/koma-script:scrdoc.cls</code></dd>
-
-  <dt>scrlttr2.cls</dt>
-    <dd><code>./tex/latex/koma-script:scrlttr2.cls</code></dd>
-
-  <dt>scrreprt.cls</dt>
-    <dd><code>./tex/latex/koma-script:scrreprt.cls</code></dd>
-
-  <dt>komacv.cls</dt>
-    <dd><code>./tex/latex/komacv:komacv.cls</code></dd>
 
   <dt>oblivoir-base.cls</dt>
     <dd><code>./tex/latex/kotex-oblivoir:oblivoir-base.cls</code></dd>
@@ -1152,8 +1203,6 @@
   <dt>etiketka.cls</dt>
     <dd><code>./tex/latex/shipunov:etiketka.cls</code></dd>
 
-  <dt>caesar_book.cls</dt>
-    <dd><code>./tex/latex/sidenotes:caesar_book.cls</code></dd>
 
   <dt>simplecv.cls</dt>
     <dd><code>./tex/latex/simplecv:simplecv.cls</code></dd>
