@@ -9,7 +9,7 @@
 
 <h2>用途による分類</h2>
 <h3>Book系</h3>
-<p>左右でページの組み方の異なる長い文書.  各章は奇数ページで始まるなどの特徴がある.</p>
+<p>長い文書.  両面印刷を想定しており, 各章は奇数ページで始まるなどの特徴がある.</p>
 <p>
   通常は,
   文章構造としては,
@@ -259,28 +259,108 @@
 
 
 <h3>Report系</h3>
-<p>長い文書.</p>
+<p>長い文書. 片面での印刷を想定している.</p>
+<p>
+  通常は,
+  文章構造としては,
+  <code>\part</code>
+  <code>\chapter</code>
+  <code>\section</code>
+  <code>\subsection</code>
+  <code>\subsubsection</code>
+  <code>\paragraph</code>
+  <code>\subparagraph</code>
+が使える.
+  paragraph, subparagraph以外はナンバリングされる.
+  Partが変わってもchapterの番号はリセットされない.
+  ナンバリングの形式は, Chapter.Section.Subsection.Subsubsection
+</p>
+
 <h4>英語</h4>
 <dl>
   <dt>report</dt>
   <dd><code>./tex/latex/base/report.cls</code></dd>
-  <dd>report</dd>
+  <dd>標準のreport</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
 
   <dt>extreport</dt>
   <dd><code>./tex/latex/extsizes:extreport.cls</code></dd>
-  <dd>report</dd>
-  <dd>フォントサイズの設定が多い. 8--20pt</dd>
+  <dd>フォントサイズの設定が多い. 8--20pt. ほぼreportと一緒.</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
 
   <dt>scrreprt</dt>
   <dd><code>./tex/latex/koma-script/scrreprt.cls</code></dd>
-  <dd>report</dd>
+  <dd>boldではなくsanserif</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
+
+  <dt>rapport1.cls</dt>
+  <dd><code>./tex/latex/ntgclass:rapport1.cls</code></dd>
+  <dd>ドイツ語用のクラスファイルファイルらしいが, 基本的に英語</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
+
+
+  <dt>rapport3.cls</dt>
+  <dd><code>./tex/latex/ntgclass:rapport3.cls</code></dd>
+  <dd>ドイツ語用のクラスファイルファイルらしいが, 基本的に英語</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
 
   <dt>elegantnote</dt>
   <dd><code>./tex/latex/elegantnote/elegantnote.cls</code></dd>
+  <dd><code>fandol</code>というフォントが必要.</dd>
 </dl>
 
 <h4>日本語</h4>
 <h5>jsreport</h5>
+<p>日本語の標準的なreport</p>
+<p>使える文章構造は, 次:
+  <code>\part</code>
+  <code>\chapter</code>
+  <code>\section</code>
+  <code>\subsection</code>
+  <code>\subsubsection</code>
+  <code>\paragraph</code>
+  <code>\subparagraph</code>
+</p>
 <dl>
   <dt>jsreport</dt>
   <dd><code>./tex/platex/jsclasses:jsreport.cls</code></dd>
@@ -296,6 +376,16 @@
 </dl>
 
 <h5>jreport</h5>
+<p>今は使わないほうがよいとされている日本語の昔のreport</p>
+<p>使える文章構造は, 次:
+  <code>\part</code>
+  <code>\chapter</code>
+  <code>\section</code>
+  <code>\subsection</code>
+  <code>\subsubsection</code>
+  <code>\paragraph</code>
+  <code>\subparagraph</code>
+</p>
 <dl>
   <dt>jreport</dt>
   <dd><code>./tex/platex/base/jreport.cls</code></dd>
@@ -311,6 +401,16 @@
 </dl>
 
 <h5>treport</h5>
+<p>縦書きのreport</p>
+<p>使える文章構造は, 次:
+  <code>\part</code>
+  <code>\chapter</code>
+  <code>\section</code>
+  <code>\subsection</code>
+  <code>\subsubsection</code>
+  <code>\paragraph</code>
+  <code>\subparagraph</code>
+</p>
 <dl>
   <dt>treport</dt>
   <dd><code>./tex/platex/base/treport.cls</code></dd>
@@ -327,19 +427,10 @@
 
 <h4>その他の言語</h4>
 <dl>
-  <dt>rapport1.cls</dt>
-  <dd><code>./tex/latex/ntgclass:rapport1.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>report</dd>
-
-  <dt>rapport3.cls</dt>
-  <dd><code>./tex/latex/ntgclass:rapport3.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>report</dd>
-
   <dt>ctexrep</dt>
   <dd><code>./tex/latex/ctex:ctexrep.cls</code></dd>
   <dd>中国語</dd>
+  <dd><code>fandol</code>というフォントが必要.</dd>
 </dl>
 
 
