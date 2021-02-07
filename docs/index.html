@@ -10,20 +10,24 @@
 <h2>用途による分類</h2>
 <h3>Book系</h3>
 <p>左右でページの組み方の異なる長い文書.</p>
-<h4>amsbook</h4>
+<h4>英語</h4>
 <dl>
   <dt>amsbook</dt>
   <dd><code>./tex/latex/amscls/amsbook.cls</code></dd>
   <dd>book</dd>
-</dl>
 
-<h4>ycbook</h4>
-<dl>
+  <dt>extbook</dt>
+  <dd><code>./tex/latex/extsizes:extbook.cls</code></dd>
+  <dd>book</dd>
+  <dd>フォントサイズの設定が多い. 8--20pt</dd>
+
   <dt>ycbook</dt>
   <dd><code>./tex/latex/ycbook/ycbook.cls</code></dd>
 </dl>
 
-<h4>jsbook</h4>
+
+<h4>日本語用</h4>
+<h6>jsbook</h6>
 <dl>
   <dt>jsbook</dt>
   <dd><code>./tex/platex/jsclasses/jsbook.cls</code></dd>
@@ -38,7 +42,7 @@
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
-<h4>jbook</h4>
+<h5>jbook</h5>
 <dl>
   <dt>jbook</dt>
   <dd><code>./tex/platex/base/jbook.cls</code></dd>
@@ -53,7 +57,7 @@
   <dd>LuaTeX用</dd>
 </dl>
 
-<h4>tbook</h4>
+<h5>tbook</h5>
 <dl>
   <dt>tbook</dt>
   <dd><code>./tex/platex/base/tbook.cls</code></dd>
@@ -67,7 +71,7 @@
   <dd><code>./tex/luatex/luatexja/ltjtbook.cls</code></dd>
   <dd>LuaTeX用</dd>
 
-<h4>ctexbook</h4>
+<h4>その他の言語</h4>
 <dl>
   <dt>ctexbook</dt>
   <dd><code>./tex/latex/ctex:ctexbook.cls</code></dd>
@@ -79,6 +83,16 @@
 
 <h3>Report系</h3>
 <p>長い文書.</p>
+<h4>英語</h4>
+<dl>
+  <dt>extreport</dt>
+  <dd><code>./tex/latex/extsizes:extreport.cls</code></dd>
+  <dd>report</dd>
+  <dd>フォントサイズの設定が多い. 8--20pt</dd>
+</dl>
+
+<h4>日本語</h4>
+<h5>jsreport</h5>
 <dl>
   <dt>jsreport</dt>
   <dd><code>./tex/platex/jsclasses:jsreport.cls</code></dd>
@@ -93,7 +107,7 @@
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
-<h4>jreport</h4>
+<h5>jreport</h5>
 <dl>
   <dt>jreport</dt>
   <dd><code>./tex/platex/base/jreport.cls</code></dd>
@@ -108,7 +122,7 @@
   <dd>LuaTeX用</dd>
 </dl>
 
-<h4>treport</h4>
+<h5>treport</h5>
 <dl>
   <dt>treport</dt>
   <dd><code>./tex/platex/base/treport.cls</code></dd>
@@ -123,7 +137,7 @@
   <dd>LuaTeX用</dd>
 </dl>  
 
-<h4>ctexrep</h4>
+<h4>その他の言語</h4>
 <dl>
   <dt>ctexrep</dt>
   <dd><code>./tex/latex/ctex:ctexrep.cls</code></dd>
@@ -133,14 +147,21 @@
 
 <h3>Article系</h3>
 <p>短めの文書.</p>
-<h4>amsart</h4>
+
+<h4>英語用</h4>
 <dl>
   <dt>amsart</dt>
   <dd><code>./tex/latex/amscls/amsart.cls</code></dd>
+  <dd>ams article</dd>
+
+  <dt>extarticle</dt>
+  <dd><code>./tex/latex/extsizes:extarticle.cls</code></dd>
   <dd>article</dd>
+  <dd>フォントサイズの設定が多い. 8--20pt</dd>
 </dl>
 
-<h4>jsarticle</h4>
+<h4>日本語用</h4>
+<h5>jsarticle</h5>
 <dl>
   <dt>jsarticle</dt>
   <dd><code>./tex/platex/jsclasses/jsarticle.cls</code></dd>
@@ -155,7 +176,7 @@
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
-<h4>jarticle</h4>
+<h5>jarticle</h5>
 <dl>
   <dt>jarticle</dt>
   <dd><code>./tex/platex/base/jarticle.cls</code></dd>
@@ -192,7 +213,7 @@
   <dd>日本語組版処理の要件を満たす日本語ドキュメントクラス</dd>
 </dl>
 
-<h4>ctexart</h4>
+<h4>その他の言語</h4>
 <dl>
   <dt>ctexart</dt>
   <dd><code>./tex/latex/ctex:ctexart.cls</code></dd>
@@ -213,11 +234,25 @@
   <dd>中国語</dd>
 </dl>
 
-<h3>Proceeding系</h3>
+<h3>Letter系</h3>
+<h4>英語</h4>
+<dl>
+  <dt>extletter</dt>
+  <dd><code>./tex/latex/extsizes:extletter.cls</code></dd>
+  <dd>letter</dd>
+  <dd>フォントサイズの設定が多い. 8--20pt</dd>
+</dl>
+
+<h3>Proc系</h3>
 <p>報告集などの雛形</p>
 <dl>
   <dt>amsproc</dt>
   <dd><code>./tex/latex/amscls/amsproc.cls</code></dd>
+
+  <dt>extproc</dt>
+  <dd><code>./tex/latex/extsizes:extproc.cls</code></dd>
+  <dd>proc</dd>
+  <dd>フォントサイズの設定が多い. 8--20pt</dd>
 </dl>
 
 <h3>特定の雑誌の投稿用</h3>
@@ -302,6 +337,31 @@
   <dt>amsproc.cls</dt>
   <dd><code>./tex/latex/amscls:amsproc.cls</code></dd>
   <dd>報告集などの雛形</dd>  
+</dl>
+
+<h3>Extsize classes</h3>
+<p>フォントサイズの設定が多い. 8--20pt</p>
+<dl>
+  <dt>extarticle</dt>
+  <dd><code>./tex/latex/extsizes:extarticle.cls</code></dd>
+  <dd>article</dd>
+  
+  <dt>extbook</dt>
+  <dd><code>./tex/latex/extsizes:extbook.cls</code></dd>
+  <dd>book</dd>
+  
+  <dt>extletter</dt>
+  <dd><code>./tex/latex/extsizes:extletter.cls</code></dd>
+  <dd>letter</dd>
+  
+  <dt>extproc</dt>
+  <dd><code>./tex/latex/extsizes:extproc.cls</code></dd>
+  <dd>proc</dd>
+  
+  <dt>extreport</dt>
+  <dd><code>./tex/latex/extsizes:extreport.cls</code></dd>
+  <dd>report</dd>
+  
 </dl>
 
 <h3>JS classes系統</h3>
@@ -529,10 +589,13 @@
 <!-- @@@@ -->
 <h3>CTeX classes</h3>
 
+<h3>Extsize classes</h3>
+
+
 <h4></h4>
 <dl>
-
 </dl>
+
 
 <h2>これから調べるもの</h2>
 <dl>
@@ -722,21 +785,6 @@
 
   <dt>examdesign.cls</dt>
     <dd><code>./tex/latex/examdesign:examdesign.cls</code></dd>
-
-  <dt>extarticle.cls</dt>
-    <dd><code>./tex/latex/extsizes:extarticle.cls</code></dd>
-
-  <dt>extbook.cls</dt>
-    <dd><code>./tex/latex/extsizes:extbook.cls</code></dd>
-
-  <dt>extletter.cls</dt>
-    <dd><code>./tex/latex/extsizes:extletter.cls</code></dd>
-
-  <dt>extproc.cls</dt>
-    <dd><code>./tex/latex/extsizes:extproc.cls</code></dd>
-
-  <dt>extreport.cls</dt>
-    <dd><code>./tex/latex/extsizes:extreport.cls</code></dd>
 
   <dt>facsimile.cls</dt>
     <dd><code>./tex/latex/facsimile:facsimile.cls</code></dd>
