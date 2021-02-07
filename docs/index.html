@@ -9,47 +9,168 @@
 
 <h2>用途による分類</h2>
 <h3>Book系</h3>
-<p>左右でページの組み方の異なる長い文書.</p>
+<p>左右でページの組み方の異なる長い文書.  各章は奇数ページで始まるなどの特徴がある.</p>
+<p>
+  通常は,
+  文章構造としては,
+  <code>\part</code>
+  <code>\chapter</code>
+  <code>\section</code>
+  <code>\subsection</code>
+  <code>\subsubsection</code>
+  <code>\paragraph</code>
+  <code>\subparagraph</code>
+が使える.
+  paragraph, subparagraph以外はナンバリングされる.
+  Partが変わってもchapterの番号はリセットされない.
+  ナンバリングの形式は, Chapter.Section.Subsection.Subsubsection
+</p>
+
 <h4>英語</h4>
 <dl>
   <dt>amsbook</dt>
   <dd><code>./tex/latex/amscls/amsbook.cls</code></dd>
-  <dd>book</dd>
+  <dd>AMSのbook</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+    (ただし, sectionのナンバリングはChapter.Sectionという形式ではなく,
+    Section単体の形式がデフォルト.)
+  </dd>
 
+  
   <dt>book</dt>
   <dd><code>./tex/latex/base/book.cls</code></dd>
-  <dd>Book</dd>
+  <dd>もともとあるbook</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
 
   <dt>extbook</dt>
   <dd><code>./tex/latex/extsizes:extbook.cls</code></dd>
-  <dd>book</dd>
-  <dd>フォントサイズの設定が多い. 8--20pt</dd>
+  <dd>フォントサイズの設定が多い. 8--20pt.  基本的に標準のbookと同じ.</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
 
-  <dt>scrbook.cls</dt>
-  <dd><code>./tex/latex/koma-script:scrbook.cls</code></dd>
-  <dd>book</dd>
-
-  <dt>ycbook</dt>
-  <dd><code>./tex/latex/ycbook/ycbook.cls</code></dd>
-
-  <dt>tufte-book.cls</dt>
-  <dd><code>./tex/latex/tufte-latex:tufte-book.cls</code></dd>
-  <dd>Edward Tufte風. book</dd>
-    
-  <dt>elegantbook</dt>
-  <dd><code>./tex/latex/elegantbook/elegantbook.cls</code></dd>
+  <dt>scrbook</dt>
+  <dd><code>./tex/latex/koma-script/scrbook.cls</code></dd>
+  <dd>boldではなくsanserif</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
 
   <dt>bookest.cls</dt>
   <dd><code>./tex/latex/bookest:bookest.cls</code></dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
 
-  <dt>caesar_book.cls</dt>
-  <dd><code>./tex/latex/sidenotes:caesar_book.cls</code></dd>
+  <dt>caesar_book</dt>
+  <dd><code>./tex/latex/sidenotes/caesar_book.cls</code></dd>
   <dd>Sidenote.styを使用. 傍註が広い.</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+    (デフォルトではどの構造もナンバリングされない)
+  </dd>
+
+  <dt>tufte-book</dt>
+  <dd><code>./tex/latex/tufte-latex/tufte-book.cls</code></dd>
+  <dd>Edward Tufte風. book</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\paragraph</code>
+    (デフォルトではどの構造もナンバリングされない)
+  </dd>
+
+  <dt>boek</dt>
+  <dd><code>./tex/latex/ntgclass/boek.cls</code></dd>
+  <dd>ドイツ語用のクラスファイルのようだが, 基本的に英語.</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
+
+  
+  <dt>boek3</dt>
+  <dd><code>./tex/latex/ntgclass/boek3.cls</code></dd>
+  <dd>ドイツ語用のクラスファイルのようだが, 基本的に英語.</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
+
+  <dt>ycbook</dt>
+  <dd><code>./tex/latex/ycbook/ycbook.cls</code></dd>
+  <dd><code>mwbk.cls</code>が必要.</dd>
+
+  <dt>elegantbook</dt>
+  <dd><code>./tex/latex/elegantbook/elegantbook.cls</code></dd>
+  <dd><code>fandol</code>というフォントが必要.</dd>
+  
 </dl>
 
 
 <h4>日本語用</h4>
 <h6>jsbook</h6>
+<p>日本語の標準的なbook</p>
+<p>使える文章構造は, 次:
+  <code>\part</code>
+  <code>\chapter</code>
+  <code>\section</code>
+  <code>\subsection</code>
+  <code>\subsubsection</code>
+  <code>\paragraph</code>
+  <code>\subparagraph</code>
+</p>
 <dl>
   <dt>jsbook</dt>
   <dd><code>./tex/platex/jsclasses/jsbook.cls</code></dd>
@@ -65,10 +186,19 @@
 </dl>
 
 <h5>jbook</h5>
+<p>今は使わないほうがよいと思われる日本語の昔のbook</p>
+<p>使える文章構造は, 次:
+  <code>\part</code>
+  <code>\chapter</code>
+  <code>\section</code>
+  <code>\subsection</code>
+  <code>\subsubsection</code>
+  <code>\paragraph</code>
+  <code>\subparagraph</code>
+</p>
 <dl>
   <dt>jbook</dt>
   <dd><code>./tex/platex/base/jbook.cls</code></dd>
-  <dd>日本語用book</dd>
 
   <dt>ujbook</dt>
   <dd><code>./tex/uplatex/base/ujbook.cls</code></dd>
@@ -80,10 +210,19 @@
 </dl>
 
 <h5>tbook</h5>
+<p>縦書きのbook</p>
+<p>使える文章構造は, 次:
+  <code>\part</code>
+  <code>\chapter</code>
+  <code>\section</code>
+  <code>\subsection</code>
+  <code>\subsubsection</code>
+  <code>\paragraph</code>
+  <code>\subparagraph</code>
+</p>
 <dl>
   <dt>tbook</dt>
   <dd><code>./tex/platex/base/tbook.cls</code></dd>
-  <dd>縦書きbook</dd>
   
   <dt>utbook</dt>
   <dd><code>./tex/uplatex/base/utbook.cls</code></dd>
@@ -95,23 +234,25 @@
 
 <h4>その他の言語</h4>
 <dl>
-  <dt>boek.cls</dt>
-  <dd><code>./tex/latex/ntgclass:boek.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>Book</dd>
-  
-  <dt>boek3.cls</dt>
-  <dd><code>./tex/latex/ntgclass:boek3.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>Book</dd>
+  <dt>bbook</dt>
+  <dd><code>./tex/latex/bangtex/bbook.cls</code></dd>
+  <dd>ベンガル語アッサム語</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
 
-  <dt>bbook.cls</dt>
-  <dd><code>./tex/latex/bangtex:bbook.cls</code></dd>
-  <dd>ベンガル語アッサム語 book</dd>
 
   <dt>ctexbook</dt>
-  <dd><code>./tex/latex/ctex:ctexbook.cls</code></dd>
+  <dd><code>./tex/latex/ctex/ctexbook.cls</code></dd>
   <dd>中国語</dd>
+  <dd><code>fandol</code>というフォントが必要.</dd>
+
 </dl>
 </dl>
 
