@@ -86,9 +86,35 @@
     <code>\subparagraph</code>
   </dd>
 
+  <dt>ncc</dt>
+  <dd><code>./tex/latex/ncclatex/ncc.cls</code></dd>
+  <dd>クラスオプションとして, article, report, bookを指定</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
+
   <dt>bookest</dt>
   <dd><code>./tex/latex/bookest/bookest.cls</code></dd>
   <dd>雰囲気が標準のbookとはかなり異なる.</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
+
+  <dt>memoir</dt>
+  <dd><code>./tex/latex/memoir/memoir.cls</code></dd>
+  <dd>book</dd>
   <dd>使える文章構造は, 次:
     <code>\part</code>
     <code>\chapter</code>
@@ -124,6 +150,38 @@
     <code>\paragraph</code>
     (デフォルトではどの構造もナンバリングされない)
   </dd>
+
+  <dt>octavo</dt>
+  <dd><code>./tex/latex/octavo/octavo.cls</code></dd>
+  <dd>book</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+    (デフォルトではどの構造もナンバリングされない)
+  </dd>
+  <dd><code>\documentclass</code>で<code>[titlepage]</code>とオプションを指定しないと<code>\maketitle</code>が使えない.</dd>
+
+  <dt>akkscript</dt>
+  <dd><code>./tex/latex/akktex/akkscript.cls</code></dd>
+  <dd>book</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+    (デフォルトではどの構造もナンバリングされない)
+  </dd>
+  <dd><code>\maketitle</code>なし</dd>
+  <dd>プリアンブルに<code>\author</code>などを書く必要あり.</dd>
+
 
   <dt>boek</dt>
   <dd><code>./tex/latex/ntgclass/boek.cls</code></dd>
@@ -310,6 +368,19 @@
     <code>\subparagraph</code>
   </dd>
 
+  <dt>ncc</dt>
+  <dd><code>./tex/latex/ncclatex/ncc.cls</code></dd>
+  <dd>クラスオプションとして, article, report, bookを指定</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\subsubsection</code>
+    <code>\paragraph</code>
+    <code>\subparagraph</code>
+  </dd>
+
   <dt>scrreprt</dt>
   <dd><code>./tex/latex/koma-script/scrreprt.cls</code></dd>
   <dd>boldではなくsanserif</dd>
@@ -455,6 +526,11 @@
   <dd><code>./tex/latex/ctex/ctexrep.cls</code></dd>
   <dd>中国語</dd>
   <dd><code>fandol</code>というフォントが必要.</dd>
+
+  <dt>lectures</dt>
+  <dd><code>./tex/latex/lectures/lectures.cls</code></dd>
+  <dd>report?</dd>
+  <dd>babelでitalianが必要</dd>  
 </dl>
 
 
@@ -475,6 +551,14 @@
   <dd><code>./tex/latex/extsizes/extarticle.cls</code></dd>
   <dd>article</dd>
   <dd>フォントサイズの設定が多い. 8--20pt</dd>
+
+  <dt>ncc</dt>
+  <dd><code>./tex/latex/ncclatex/ncc.cls</code></dd>
+  <dd>クラスオプションとして, article, report, bookを指定</dd>
+  
+  <dt>sibjnm.cls</dt>
+  <dd><code>./tex/latex/ncclatex:sibjnm.cls</code></dd>
+  <dd>article</dd>
 
   <dt>tufte-handout</dt>
   <dd><code>./tex/latex/tufte-latex/tufte-handout.cls</code></dd>
@@ -503,6 +587,17 @@
   <dt>fancyhandout</dt>
   <dd><code>./tex/latex/fancyhandout/fancyhandout.cls</code></dd>
   <dd>ハンドアウト</dd>
+
+  <dt>akklecture</dt>
+  <dd><code>./tex/latex/akktex/akklecture.cls</code></dd>
+  <dd>article</dd>
+  <dd>lecture note</dd>
+  <dd>chapterなし, プリアンブルに\authorなどを書く必要あり.</dd>
+  
+  <dt>akktecdoc</dt>
+  <dd><code>./tex/latex/akktex/akktecdoc.cls</code></dd>
+  <dd>article</dd>
+  <dd>chapterなし, プリアンブルに\authorなどを書く必要あり.</dd>
 
   <dt>hcart</dt>
   <dd><code>./tex/latex/hc/hcart.cls</code></dd>
@@ -786,7 +881,11 @@
   <dd><code>./tex/latex/extsizes/extproc.cls</code></dd>
   <dd>proc</dd>
   <dd>フォントサイズの設定が多い. 8--20pt</dd>
-  
+
+  <dt>nccproc</dt>
+  <dd><code>./tex/latex/ncclatex/nccproc.cls</code></dd>
+  <dd>proc</dd>
+ 
   <dt>labbook</dt>
   <dd><code>./tex/latex/labbook/labbook.cls</code></dd>
 
@@ -817,8 +916,8 @@
   <dd><code>./tex/latex/emulateapj/emulateapj.cls</code></dd>
   <dd>the Astrophysical Journal</dd>
 
-  <dt>iwhdp.cls</dt>
-  <dd><code>./tex/latex/iwhdp:iwhdp.cls</code></dd>
+  <dt>iwhdp</dt>
+  <dd><code>./tex/latex/iwhdp/iwhdp.cls</code></dd>
   <dd>Discussion Papers of the Halle Institute for Economic Research (IWH) in Halle, Germany</dd>
 
   <dt>hpsdiss</dt>
@@ -864,8 +963,8 @@
   <dd><code>./tex/latex/dtk/dtk.cls</code></dd>
   <dd>DANTE  German TeX Users Group</dd>
   
-  <dt>isov2.cls</dt>
-  <dd><code>./tex/latex/iso:isov2.cls</code></dd>
+  <dt>isov2</dt>
+  <dd><code>./tex/latex/iso/isov2.cls</code></dd>
   <dd>ISO標準</dd>
 
   <dt>kiyou</dt>
@@ -1036,6 +1135,14 @@
   <dd><code>./tex/latex/cweb-latex:cweb.cls</code></dd>
   <dd>CWEB (WebのPascalではなくC/C++版) LeTeX version </dd>
   
+  <dt>tcldoc.cls</dt>
+  <dd><code>./tex/latex/tcldoc:tcldoc.cls</code></dd>
+  <dd>TCL用docstrip</dd>
+  
+  <dt>tclldoc.cls</dt>
+  <dd><code>./tex/latex/tcldoc:tclldoc.cls</code></dd>
+  <dd>TCL用docstrip</dd>
+
   <dt>kerntest</dt>
   <dd><code>./tex/latex/kerntest/kerntest.cls</code></dd>
   <dd>Kerningの調整用</dd>
@@ -1243,6 +1350,10 @@
   <dt>limap</dt>
   <dd><code>./tex/latex/limap/limap.cls</code></dd>
   <dd>Infomation Mapping (R)</dd>
+
+  <dt>upmethodology-document</dt>
+  <dd><code>./tex/latex/upmethodology/upmethodology-document.cls</code></dd>
+  <dd>optionでarticle.</dd>
 
 </dl>
 
@@ -1592,6 +1703,42 @@
   <dd>LuaTeX用</dd>
 </dl>
 
+<h3>AkkTex</h3>
+<dl>
+  <dt>akklecture</dt>
+  <dd><code>./tex/latex/akktex/akklecture.cls</code></dd>
+  <dd>article</dd>
+  <dd>lecture note</dd>
+  <dd>chapterなし, プリアンブルに\authorなどを書く必要あり.</dd>
+  
+  <dt>akkscript</dt>
+  <dd><code>./tex/latex/akktex/akkscript.cls</code></dd>
+  <dd>book</dd>
+  <dd>maketitleなし, プリアンブルに\authorなどを書く必要あり.</dd>
+
+  <dt>akktecdoc</dt>
+  <dd><code>./tex/latex/akktex/akktecdoc.cls</code></dd>
+  <dd>article</dd>
+  <dd>chapterなし, プリアンブルに\authorなどを書く必要あり.</dd>
+</dl>
+
+<h3>NCC</h3>
+<h4></h4>
+<dl>
+  <dt>ncc</dt>
+  <dd><code>./tex/latex/ncclatex/ncc.cls</code></dd>
+  <dd>クラスオプションとして, article, report, bookを指定</dd>
+  
+  <dt>nccproc</dt>
+  <dd><code>./tex/latex/ncclatex/nccproc.cls</code></dd>
+  <dd>NCC Proceeding用</dd>
+  
+  <dt>sibjnm.cls</dt>
+  <dd><code>./tex/latex/ncclatex:sibjnm.cls</code></dd>
+  <dd>article</dd>
+  
+</dl>
+
 <h3>Ntgclass</h3>
 <dl>
   <dt>artikel1</dt>
@@ -1685,27 +1832,11 @@
 
 <h2>未整理のもの</h2>
 <!-- @@@@ -->
-<h3></h3>
+<h3>NCC</h3>
 <h4></h4>
 <dl>
-  <dt>octavo</dt>
-  <dd><code>./tex/latex/octavo/octavo.cls</code></dd>
-  <dd>book</dd>
-
-  <dt>lectures</dt>
-  <dd><code>./tex/latex/lectures/lectures.cls</code></dd>
-  <dd>report?</dd>
-    
-  <dt>memoir</dt>
-  <dd><code>./tex/latex/memoir/memoir.cls</code></dd>
-  <dd>book?</dd>
-
-  <dt>upmethodology-document</dt>
-  <dd><code>./tex/latex/upmethodology/upmethodology-document.cls</code></dd>
-  <dd>optionでbook report article</dd>
-
 </dl>
-
+<
 
 <h2>これから調べるもの</h2>
 <dl>
@@ -1730,15 +1861,6 @@
   <dt>movie.cls</dt>
     <dd><code>./tex/generic/xypic:movie.cls</code></dd>
 
-  <dt>akklecture.cls</dt>
-    <dd><code>./tex/latex/akktex:akklecture.cls</code></dd>
-
-  <dt>akkscript.cls</dt>
-    <dd><code>./tex/latex/akktex:akkscript.cls</code></dd>
-
-  <dt>akktecdoc.cls</dt>
-    <dd><code>./tex/latex/akktex:akktecdoc.cls</code></dd>
-
   <dt>articoletteracdp.cls</dt>
     <dd><code>./tex/latex/cdpbundl:articoletteracdp.cls</code></dd>
 
@@ -1757,15 +1879,6 @@
   <dt>xoblivoir.cls</dt>
     <dd><code>./tex/latex/kotex-oblivoir:xoblivoir.cls</code></dd>
 
-  <dt>ncc.cls</dt>
-    <dd><code>./tex/latex/ncclatex:ncc.cls</code></dd>
-
-  <dt>nccproc.cls</dt>
-    <dd><code>./tex/latex/ncclatex:nccproc.cls</code></dd>
-
-  <dt>sibjnm.cls</dt>
-    <dd><code>./tex/latex/ncclatex:sibjnm.cls</code></dd>
-  
   <dt>skbarticle.cls</dt>
     <dd><code>./tex/latex/skb:skbarticle.cls</code></dd>
 
@@ -1795,12 +1908,6 @@
 
   <dt>smglom.cls</dt>
     <dd><code>./tex/latex/stex/smglom:smglom.cls</code></dd>
-
-  <dt>tcldoc.cls</dt>
-    <dd><code>./tex/latex/tcldoc:tcldoc.cls</code></dd>
-
-  <dt>tclldoc.cls</dt>
-    <dd><code>./tex/latex/tcldoc:tclldoc.cls</code></dd>
 
   <dt>xkveca.cls</dt>
     <dd><code>./tex/latex/xkeyval:xkveca.cls</code></dd>
