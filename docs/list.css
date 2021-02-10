@@ -17,7 +17,7 @@ h6 {
   counter-reset: h7;
 }
 
-h2::before {
+h3::before {
   counter-increment: h3;
   content:  counter(h3) ". ";
 }
