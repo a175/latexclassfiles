@@ -10,7 +10,12 @@
 <p><code>\documentclass</code>で指定できるclsファイルのリスト (網羅的ではない).</p>
 
 <h2>用途による分類</h2>
-<p>便宜上, Book系(両面印刷, 長文), Report系(片面印刷, 長文), Article系, Slide系, Letter系, Proc系, 特定の雑誌の投稿用, 特殊用途, CV, Misc に分類している.</p>
+<p>便宜上,
+  Book系(両面印刷, 長文),
+  Report系(片面印刷, 長文),
+  Article系, Slide系, Letter系, Proc系,
+  特定の雑誌の投稿用, 特殊用途, CV, Misc に分類している.
+</p>
 <h3>Book系</h3>
 <p>長い文書.  両面印刷を想定しており, 各章は奇数ページで始まるなどの特徴がある.</p>
 <p>
@@ -23,7 +28,7 @@
   <code>\subsubsection</code>
   <code>\paragraph</code>
   <code>\subparagraph</code>
-が使える.
+  が使える.
   paragraph, subparagraph以外はナンバリングされる.
   Partが変わってもchapterの番号はリセットされない.
   ナンバリングの形式は, Chapter.Section.Subsection.Subsubsection
@@ -914,7 +919,8 @@
   <dd>複数のドキュメントを一つにまとめるためのクラス</dd>
 </dl>
 
-<h3>特定の雑誌の投稿用</h3>
+<h3>特定の雑誌などの投稿用</h3>
+<h4>雑誌, 学位論文やニュースなど</h4>
 <dl>
   <dt>achemso</dt>
   <dd><code>./tex/latex/achemso/achemso.cls</code></dd>
@@ -970,6 +976,7 @@
 
   <dt>europroc</dt>
   <dd><code>./tex/generic/dcpic/europroc.cls</code></dd>
+  <dd>Euro TeX 2001</dd>
 
   <dt>dtk</dt>
   <dd><code>./tex/latex/dtk/dtk.cls</code></dd>
@@ -994,7 +1001,10 @@
   <dt>ltnews</dt>
   <dd><code>./tex/latex/base/ltnews.cls</code></dd>
   <dd>ltnews用</dd>
+</dl>
 
+<h4>パッケージのマニュアルなど</h4>
+<dl>
   <dt>ltxguide</dt>
   <dd><code>./tex/latex/base/ltxguide.cls</code></dd>
   <dd>LaTeXガイド用</dd>
@@ -1033,9 +1043,7 @@
   <dt>tkz-doc</dt>
   <dd><code>./tex/latex/tkz-doc/tkz-doc.cls</code></dd>
   <dd>tkzパッケージのドキュメント用</dd>
-
 </dl>
-
 
 <h3>CV</h3>
 <dl>
@@ -1370,498 +1378,13 @@
 </dl>
 
 <h2>パッケージによる分類</h2>
-<h3>AMS系統</h3>
-<dl>
-  <dt>amsart</dt>
-  <dd><code>./tex/latex/amscls/amsart.cls</code></dd>
-  <dd>article</dd>
-  
-  <dt>amsbook</dt>
-  <dd><code>./tex/latex/amscls/amsbook.cls</code></dd>
-  <dd>book</dd>
-  
-  <dt>amsdtx</dt>
-  <dd><code>./tex/latex/amscls/amsdtx.cls</code></dd>
-  <dd>AMSLaTeXのdtx用のクラス</dd>
-  
-  <dt>amsldoc</dt>
-  <dd><code>./tex/latex/amscls/amsldoc.cls</code></dd>
-  <dd>AMSLaTeXのドキュメントamsldoc用のクラス</dd>
-  
-  <dt>amsproc</dt>
-  <dd><code>./tex/latex/amscls/amsproc.cls</code></dd>
-  <dd>報告集などの雛形</dd>  
-</dl>
-
-<h3>Base</h3>
-<dl>
-  <dt>article</dt>
-  <dd><code>./tex/latex/base/article.cls</code></dd>
-  <dd>Article</dd>
-  
-  <dt>book</dt>
-  <dd><code>./tex/latex/base/book.cls</code></dd>
-  <dd>Book</dd>
-
-  <dt>letter</dt>
-  <dd><code>./tex/latex/base/letter.cls</code></dd>
-  <dd>Letter</dd>
-
-  <dt>ltnews</dt>
-  <dd><code>./tex/latex/base/ltnews.cls</code></dd>
-  <dd>ltnews用</dd>
-
-  <dt>ltxdoc</dt>
-  <dd><code>./tex/latex/base/ltxdoc.cls</code></dd>
-  <dd>dtx</dd>
-
-  <dt>ltxguide</dt>
-  <dd><code>./tex/latex/base/ltxguide.cls</code></dd>
-  <dd>LaTeXガイド用</dd>
-
-  <dt>minimal</dt>
-  <dd><code>./tex/latex/base/minimal.cls</code></dd>
-  <dd>最小</dd>
-
-  <dt>proc</dt>
-  <dd><code>./tex/latex/base/proc.cls</code></dd>
-  <dd>proc</dd>
-
-  <dt>report</dt>
-  <dd><code>./tex/latex/base/report.cls</code></dd>
-  <dd>report</dd>
-
-  <dt>slides</dt>
-  <dd><code>./tex/latex/base/slides.cls</code></dd>
-  <dd>slides</dd>
-
-</dl>
-
-<h3>Extsize classes</h3>
-<p>フォントサイズの設定が多い. 8--20pt</p>
-<dl>
-  <dt>extarticle</dt>
-  <dd><code>./tex/latex/extsizes/extarticle.cls</code></dd>
-  <dd>article</dd>
-  
-  <dt>extbook</dt>
-  <dd><code>./tex/latex/extsizes/extbook.cls</code></dd>
-  <dd>book</dd>
-  
-  <dt>extletter</dt>
-  <dd><code>./tex/latex/extsizes/extletter.cls</code></dd>
-  <dd>letter</dd>
-  
-  <dt>extproc</dt>
-  <dd><code>./tex/latex/extsizes/extproc.cls</code></dd>
-  <dd>proc</dd>
-  
-  <dt>extreport</dt>
-  <dd><code>./tex/latex/extsizes/extreport.cls</code></dd>
-  <dd>report</dd>
-  
-</dl>
-
-<h3>Elegant LaTeX classes</h3>
-<dl>
-  <dt>elegantbook</dt>
-  <dd><code>./tex/latex/elegantbook/elegantbook.cls</code></dd>
-
-  <dt>elegantnote</dt>
-  <dd><code>./tex/latex/elegantnote/elegantnote.cls</code></dd>
-
-  <dt>elegantpaper</dt>
-  <dd><code>./tex/latex/elegantpaper/elegantpaper.cls</code></dd>
-</dl>
-
-<h3>Tufte LaTeX classes</h3>
-<dl>
-  <dt>tufte-book</dt>
-  <dd><code>./tex/latex/tufte-latex/tufte-book.cls</code></dd>
-  <dd>Edward Tufte風. book</dd>
-  
-  <dt>tufte-handout</dt>
-  <dd><code>./tex/latex/tufte-latex/tufte-handout.cls</code></dd>
-  <dd>Edward Tufte風. hand out</dd>
-</dl>
-
-<h3>Koma script系</h3>
-<dl>
-  <dt>scrartcl</dt>
-  <dd><code>./tex/latex/koma-script/scrartcl.cls</code></dd>
-  <dd>article</dd>
-  
-  <dt>scrbook</dt>
-  <dd><code>./tex/latex/koma-script/scrbook.cls</code></dd>
-  <dd>book</dd>
-
-  <dt>scrdoc</dt>
-  <dd><code>./tex/latex/koma-script/scrdoc.cls</code></dd>
-  <dd>通常使わない</dd>
-
-  <dt>scrlttr2</dt>
-  <dd><code>./tex/latex/koma-script/scrlttr2.cls</code></dd>
-  <dd>letter</dd>
-
-  <dt>scrreprt</dt>
-  <dd><code>./tex/latex/koma-script/scrreprt.cls</code></dd>
-  <dd>report</dd>
-
-  <dt>komacv</dt>
-  <dd><code>./tex/latex/komacv/komacv.cls</code></dd>
-  <dd>CV</dd>
-
-  <dt>scrguide</dt>
-  <dd><code>./source/latex/koma-script/doc/scrguide.cls</code></dd>
-</dl>
-
-<h3>hc</h3>
-<h4></h4>
-<dl>
-  <dt>hcart</dt>
-  <dd><code>./tex/latex/hc/hcart.cls</code></dd>
-  <dd>eurofont.styが必要</dd>
-  
-  <dt>hcletter</dt>
-  <dd><code>./tex/latex/hc/hcletter.cls</code></dd>
-
-  <dt>hcreport</dt>
-  <dd><code>./tex/latex/hc/hcreport.cls</code></dd>
-  <dd>eurofont.styが必要</dd>
-  
-  <dt>hcslides</dt>
-  <dd><code>./tex/latex/hc/hcslides.cls</code></dd>
-  <dd>eurofont.styが必要</dd>
-</dl>
-
-<h3>JS classes系統</h3>
-<h4>jsarticle</h4>
-<dl>
-  <dt>jsarticle</dt>
-  <dd><code>./tex/platex/jsclasses/jsarticle.cls</code></dd>
-  <dd>日本語用のarticle</dd>
-  
-  <dt>ltjsarticle</dt>
-  <dd><code>./tex/luatex/luatexja/ltjsarticle.cls</code></dd>
-  <dd>LuaTeX用</dd>
-
-
-  <dt>bxjsarticle</dt>
-  <dd><code>./tex/latex/bxjscls/bxjsarticle.cls</code></dd>
-  <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
-</dl>
-
-<h4>jsbook</h4>
-<dl>
-  <dt>jsbook</dt>
-  <dd><code>./tex/platex/jsclasses/jsbook.cls</code></dd>
-  <dd>日本語用のbook</dd>
-
-  <dt>ltjsbook</dt>
-  <dd><code>./tex/luatex/luatexja/ltjsbook.cls</code></dd>
-  <dd>LuaTeX用</dd>
-  
-  <dt>bxjsbook</dt>
-  <dd><code>./tex/latex/bxjscls/bxjsbook.cls</code></dd>
-  <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
-</dl>
-
-<h4>jsreport</h4>
-<dl>
-  <dt>jsreport</dt>
-  <dd><code>./tex/platex/jsclasses/jsreport.cls</code></dd>
-  <dd>日本語用のreport</dd>
-
-  <dt>ltjsreport</dt>
-  <dd><code>./tex/luatex/luatexja/ltjsreport.cls</code></dd>
-  <dd>LuaTeX用</dd>
-  
-  <dt>bxjsreport</dt>
-  <dd><code>./tex/latex/bxjscls/bxjsreport.cls</code></dd>
-  <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
-</dl>
-
-<h4>jsslide</h4>
-<dl>
-  <dt>bxjsslide</dt>
-  <dd><code>./tex/latex/bxjscls/bxjsslide.cls</code></dd>
-  <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
-</dl>
-
-<h4>jspf</h4>
-<dl>
-  <dt>jspf</dt>
-  <dd><code>./tex/platex/jsclasses/jspf.cls</code></dd>
-  <dd>プラズマ・核融合学会スタイル</dd>
-</dl>
-<h4>kiyo</h4>
-<dl>
-  <dt>kiyou</dt>
-  <dd><code>./tex/platex/jsclasses/kiyou.cls</code></dd>
-  <dd><code>紀要</code></dd>
-
-  <dt>ltjskiyou</dt>
-  <dd><code>./tex/luatex/luatexja/ltjskiyou.cls</code></dd>
-  <dd>LuaTeX用</dd>
-</dl>
-
-
-<h3>Japanese classes</h3>
-<h4>jbook</h4>
-<dl>
-  <dt>jbook</dt>
-  <dd><code>./tex/platex/base/jbook.cls</code></dd>
-  <dd>日本語用book</dd>
-
-  <dt>ujbook</dt>
-  <dd><code>./tex/uplatex/base/ujbook.cls</code></dd>
-  <dd>uplatex用</dd>
-  
-  <dt>ltjbook</dt>
-  <dd><code>./tex/luatex/luatexja/ltjbook.cls</code></dd>
-  <dd>LuaTeX用</dd>
-</dl>
-
-<h4>tbook</h4>
-<dl>
-  <dt>tbook</dt>
-  <dd><code>./tex/platex/base/tbook.cls</code></dd>
-  <dd>縦書きbook</dd>
-  
-  <dt>utbook</dt>
-  <dd><code>./tex/uplatex/base/utbook.cls</code></dd>
-  <dd>uplatex用</dd>
-
-  <dt>ltjtbook</dt>
-  <dd><code>./tex/luatex/luatexja/ltjtbook.cls</code></dd>
-  <dd>LuaTeX用</dd>
-</dl>
-
-<h4>jreport</h4>
-<dl>
-  <dt>jreport</dt>
-  <dd><code>./tex/platex/base/jreport.cls</code></dd>
-  <dd>日本語用report</dd>
-
-  <dt>ujreport</dt>
-  <dd><code>./tex/uplatex/base/ujreport.cls</code></dd>
-  <dd>uplatex用</dd>
-
-  <dt>ltjreport</dt>
-  <dd><code>./tex/luatex/luatexja/ltjreport.cls</code></dd>
-  <dd>LuaTeX用</dd>
-</dl>
-
-<h4>treport</h4>
-<dl>
-  <dt>treport</dt>
-  <dd><code>./tex/platex/base/treport.cls</code></dd>
-  <dd>縦書きreport</dd>
-
-  <dt>utreport</dt>
-  <dd><code>./tex/uplatex/base/utreport.cls</code></dd>
-  <dd>uplatex用</dd>
-
-  <dt>ltjtreport</dt>
-  <dd><code>./tex/luatex/luatexja/ltjtreport.cls</code></dd>
-  <dd>LuaTeX用</dd>
-</dl>  
-
-<h4>jarticle</h4>
-<dl>
-  <dt>jarticle</dt>
-  <dd><code>./tex/platex/base/jarticle.cls</code></dd>
-  <dd>日本語用article</dd>
-
-  <dt>ujarticle</dt>
-  <dd><code>./tex/uplatex/base/ujarticle.cls</code></dd>
-  <dd><code>uplatex用</code></dd>
-
-  <dt>ltjarticle</dt>
-  <dd><code>./tex/luatex/luatexja/ltjarticle.cls</code></dd>
-  <dd>LuaTeX用</dd>
-</dl>
-
-<h4>tarticle</h4>
-<dl>
-  <dt>tarticle</dt>
-  <dd><code>./tex/platex/base/tarticle.cls</code></dd>
-  <dd>縦書きarticle</dd>
-
-  <dt>utarticle</dt>
-  <dd><code>./tex/uplatex/base/utarticle.cls</code></dd>
-  <dd>uplatex用</dd>
-    
-  <dt>ltjtarticle</dt>
-  <dd><code>./tex/luatex/luatexja/ltjtarticle.cls</code></dd>
-  <dd>LuaTeX用</dd>
-</dl>
-
-<h4>plnews</h4>
-<dl>
-  <dt>plnews</dt>
-  <dd><code>./tex/platex/base/plnews.cls</code></dd>
-  <dd>pLaTeX ニュース用</dd>
-</dl>
-
-<h4>jltxdoc</h4>
-<dl>
-  <dt>jltxdoc</dt>
-  <dd><code>./tex/platex/base/jltxdoc.cls</code></dd>
-  <dd>日本語の dtx ファイル記述用</dd>
-
-  <dt>ltjltxdoc</dt>
-  <dd><code>./tex/luatex/luatexja/ltjltxdoc.cls</code></dd>
-  <dd>LuaTeX用</dd>
-</dl>
-
-<h3>AkkTex</h3>
-<dl>
-  <dt>akklecture</dt>
-  <dd><code>./tex/latex/akktex/akklecture.cls</code></dd>
-  <dd>article</dd>
-  <dd>lecture note</dd>
-  <dd>chapterなし, プリアンブルに\authorなどを書く必要あり.</dd>
-  
-  <dt>akkscript</dt>
-  <dd><code>./tex/latex/akktex/akkscript.cls</code></dd>
-  <dd>book</dd>
-  <dd>maketitleなし, プリアンブルに\authorなどを書く必要あり.</dd>
-
-  <dt>akktecdoc</dt>
-  <dd><code>./tex/latex/akktex/akktecdoc.cls</code></dd>
-  <dd>article</dd>
-  <dd>chapterなし, プリアンブルに\authorなどを書く必要あり.</dd>
-</dl>
-
-<h3>NCC</h3>
-<h4></h4>
-<dl>
-  <dt>ncc</dt>
-  <dd><code>./tex/latex/ncclatex/ncc.cls</code></dd>
-  <dd>クラスオプションとして, article, report, bookを指定</dd>
-  
-  <dt>nccproc</dt>
-  <dd><code>./tex/latex/ncclatex/nccproc.cls</code></dd>
-  <dd>NCC Proceeding用</dd>
-  
-  <dt>sibjnm</dt>
-  <dd><code>./tex/latex/ncclatex/sibjnm.cls</code></dd>
-  <dd>article</dd>
-  
-</dl>
-
-<h3>Ntgclass</h3>
-<dl>
-  <dt>artikel1</dt>
-  <dd><code>./tex/latex/ntgclass/artikel1.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>Article</dd>
-  
-  <dt>artikel2</dt>
-  <dd><code>./tex/latex/ntgclass/artikel2.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>Article</dd>
-
-  <dt>artikel3</dt>
-  <dd><code>./tex/latex/ntgclass/artikel3.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>Article</dd>
-
-  <dt>boek</dt>
-  <dd><code>./tex/latex/ntgclass/boek.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>Book</dd>
-  
-  <dt>boek3</dt>
-  <dd><code>./tex/latex/ntgclass/boek3.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>Book</dd>
-
-  <dt>brief</dt>
-  <dd><code>./tex/latex/ntgclass/brief.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>letter</dd>
-
-  <dt>rapport1</dt>
-  <dd><code>./tex/latex/ntgclass/rapport1.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>report</dd>
-
-  <dt>rapport3</dt>
-  <dd><code>./tex/latex/ntgclass/rapport3.cls</code></dd>
-  <dd>ドイツ語</dd>
-  <dd>report</dd>
-</dl>
-
-<h3>CTeX classes</h3>
-
-<dl>  
-  <dt>ctexart</dt>
-  <dd><code>./tex/latex/ctex/ctexart.cls</code></dd>
-  <dd>中国語</dd>
-  
-  <dt>ctexbeamer</dt>
-  <dd><code>./tex/latex/ctex/ctexbeamer.cls</code></dd>
-  <dd>中国語</dd>
-
-  <dt>ctexbook</dt>
-  <dd><code>./tex/latex/ctex/ctexbook.cls</code></dd>
-  <dd>中国語</dd>
-
-  <dt>ctexrep</dt>
-  <dd><code>./tex/latex/ctex/ctexrep.cls</code></dd>
-  <dd>中国語</dd>
-
-  <dt>ctxdoc</dt>
-  <dd><code>./tex/latex/ctex/ctxdoc.cls</code></dd>
-  <dd>中国語</dd>
-</dl>
-
-<h3>Bang TeX classes</h3>
-<dl>
-  <dt>barticle</dt>
-  <dd><code>./tex/latex/bangtex/barticle.cls</code></dd>
-  <dd>ベンガル語アッサム語 article</dd>
-  
-  <dt>bbook</dt>
-  <dd><code>./tex/latex/bangtex/bbook.cls</code></dd>
-  <dd>ベンガル語アッサム語 book</dd>
-
-  <dt>bletter</dt>
-  <dd><code>./tex/latex/bangtex/bletter.cls</code></dd>
-  <dd>ベンガル語アッサム語 letter</dd>
-
-</dl>
-
-<h3>KoTeX-oblivoir</h3>
-<h4>韓国語</h4>
-<dl>
-  <dt>oblivoir-base</dt>
-  <dd><code>./tex/latex/kotex-oblivoir/oblivoir-base.cls</code></dd>
-  <dd>韓国語</dd>
-
-  <dt>oblivoir-xlua</dt>
-  <dd><code>./tex/latex/kotex-oblivoir/oblivoir-xlua.cls</code></dd>
-  <dd>韓国語</dd>
-
-  <dt>oblivoir</dt>
-  <dd><code>./tex/latex/kotex-oblivoir/oblivoir.cls</code></dd>
-  <dd>韓国語</dd>
-    
-  <dt>xoblivoir</dt>
-  <dd><code>./tex/latex/kotex-oblivoir/xoblivoir.cls</code></dd>
-  <dd>韓国語</dd>
-
-</dl>
-
-<h3>Misc (日本語)</h3>
-<dl>
-  <dt>jlreq</dt>
-  <dd><code>./tex/latex/jlreq/jlreq.cls</code></dd>  
-  <dd>日本語組版処理の要件を満たす日本語ドキュメントクラス</dd>
-</dl>
-
+<p>
+  複数の文章構造のあるパッケージ/シリーズなど.
+</p>
+<p>
+  たとえば, AMSからは, amsart, amsbookなど複数のクラスが提供されています.
+  <a href="./series.html">詳しくはこちら</a>.
+</p>
 
 <h2>未整理のもの</h2>
 <!-- @@@@ -->
