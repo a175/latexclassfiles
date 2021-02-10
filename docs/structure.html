@@ -6,18 +6,15 @@
     <title>List of LaTeX cls files</title>
   </head>
 <body>
-<h1>LaTeXのdocument classのリスト.</h1>  
+<h1>LaTeXのdocument classの用途別のリスト.</h1>  
 <p><code>\documentclass</code>で指定できるclsファイルのリスト (網羅的ではない).</p>
-
-<h2>用途による分類</h2>
 <p>
-  便宜上,
-  Book系(両面印刷, 長文),
-  Report系(片面印刷, 長文),
-  Article系, Slide系, Letter系, Proc系,
-  特定の雑誌の投稿用, 特殊用途, CV, Misc に分類している.
+  便宜上, Book系(両面印刷, 長文), Report系(片面印刷, 長文), Article系,
+  Slide系, Letter系, Proc系,特定の雑誌の投稿用, 特殊用途, CV, Misc に
+  分類している.
 </p>
-<h3>Book系</h3>
+
+<h2>Book系</h2>
 <p>長い文書.  両面印刷を想定しており, 各章は奇数ページで始まるなどの特徴がある.</p>
 <p>
   通常は,
@@ -35,7 +32,7 @@
   ナンバリングの形式は, Chapter.Section.Subsection.Subsubsection
 </p>
 
-<h4>英語</h4>
+<h3>英語</h3>
 <dl>
   <dt>amsbook</dt>
   <dd><code>./tex/latex/amscls/amsbook.cls</code></dd>
@@ -229,8 +226,8 @@
 </dl>
 
 
-<h4>日本語用</h4>
-<h5>jsbook</h5>
+<h3>日本語用</h3>
+<h4>jsbook</h4>
 <p>日本語の標準的なbook</p>
 <p>使える文章構造は, 次:
   <code>\part</code>
@@ -255,7 +252,7 @@
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
-<h5>jbook</h5>
+<h4>jbook</h4>
 <p>昔の日本語のbook.</p>
 <p>特別な事情がなければ, 今は使わないほうがよい.</p>
 <p>使える文章構造は, 次:
@@ -280,7 +277,7 @@
   <dd>LuaTeX用</dd>
 </dl>
 
-<h5>tbook</h5>
+<h4>tbook</h4>
 <p>縦書きのbook</p>
 <p>使える文章構造は, 次:
   <code>\part</code>
@@ -304,7 +301,7 @@
   <dd>LuaTeX用</dd>
 </dl>
 
-<h4>その他の言語</h4>
+<h3>その他の言語</h3>
 <dl>
   <dt>bbook</dt>
   <dd><code>./tex/latex/bangtex/bbook.cls</code></dd>
@@ -330,7 +327,7 @@
 
 
 
-<h3>Report系</h3>
+<h2>Report系</h2>
 <p>長い文書. 片面での印刷を想定している.</p>
 <p>
   通常は,
@@ -348,7 +345,7 @@
   ナンバリングの形式は, Chapter.Section.Subsection.Subsubsection
 </p>
 
-<h4>英語</h4>
+<h3>英語</h3>
 <dl>
   <dt>report</dt>
   <dd><code>./tex/latex/base/report.cls</code></dd>
@@ -451,8 +448,8 @@
   <dd>eurofont.styが必要</dd>
 </dl>
 
-<h4>日本語</h4>
-<h5>jsreport</h5>
+<h3>日本語</h3>
+<h4>jsreport</h4>
 <p>日本語の標準的なreport</p>
 <p>使える文章構造は, 次:
   <code>\part</code>
@@ -477,7 +474,7 @@
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
-<h5>jreport</h5>
+<h4>jreport</h4>
 <p>昔の日本語のreport.</p>
 <p>特別な事情がなければ, 今は使わないほうがよい.</p>
 <p>使える文章構造は, 次:
@@ -503,7 +500,7 @@
   <dd>LuaTeX用</dd>
 </dl>
 
-<h5>treport</h5>
+<h4>treport</h4>
 <p>縦書きのreport</p>
 <p>使える文章構造は, 次:
   <code>\part</code>
@@ -528,7 +525,7 @@
   <dd>LuaTeX用</dd>
 </dl>  
 
-<h4>その他の言語</h4>
+<h3>その他の言語</h3>
 <dl>
   <dt>ctexrep</dt>
   <dd><code>./tex/latex/ctex/ctexrep.cls</code></dd>
@@ -542,10 +539,10 @@
 </dl>
 
 
-<h3>Article系</h3>
+<h2>Article系</h2>
 <p>短めの文書.</p>
 
-<h4>英語用</h4>
+<h3>英語用</h3>
 <dl>
   <dt>amsart</dt>
   <dd><code>./tex/latex/amscls/amsart.cls</code></dd>
@@ -615,8 +612,8 @@
   <dd><code>./tex/latex/elegantpaper/elegantpaper.cls</code></dd>
 </dl>
 
-<h4>日本語用</h4>
-<h5>jsarticle</h5>
+<h3>日本語用</h3>
+<h4>jsarticle</h4>
 <dl>
   <dt>jsarticle</dt>
   <dd><code>./tex/platex/jsclasses/jsarticle.cls</code></dd>
@@ -631,14 +628,14 @@
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
 
-<h5>jlreq</h5>
+<h4>jlreq</h4>
 <dl>
   <dt>jlreq</dt>
   <dd><code>./tex/latex/jlreq/jlreq.cls</code></dd>  
   <dd>日本語組版処理の要件を満たす日本語ドキュメントクラス</dd>
 </dl>
 
-<h5>jarticle</h5>
+<h4>jarticle</h4>
 <p>昔の日本語のarticle.</p>
 <p>特別な事情がなければ, 今は使わないほうがよい.</p>
 <dl>
@@ -655,7 +652,7 @@
   <dd>LuaTeX用</dd>
 </dl>
 
-<h5>tarticle</h5>
+<h4>tarticle</h4>
 <dl>
   <dt>tarticle</dt>
   <dd><code>./tex/platex/base/tarticle.cls</code></dd>
@@ -671,7 +668,7 @@
 </dl>
 
 
-<h4>その他の言語</h4>
+<h3>その他の言語</h3>
 <dl>
   <dt>artikel1</dt>
   <dd><code>./tex/latex/ntgclass/artikel1.cls</code></dd>
@@ -697,8 +694,8 @@
   <dd>中国語</dd>
 </dl>
 
-<h3>Slide系</h3>
-<h4>英語</h4>
+<h2>Slide系</h2>
+<h3>英語</h3>
 <dl>
   <dt>slides</dt>
   <dd><code>./tex/latex/base/slides.cls</code></dd>
@@ -770,21 +767,21 @@
   <dd>beamerのモードを援交しやすくするラッパー</dd>
 
 </dl>
-<h4>日本語</h4>
+<h3>日本語</h3>
 <dl>
   <dt>bxjsslide</dt>
   <dd><code>./tex/latex/bxjscls/bxjsslide.cls</code></dd>
   <dd>pdfTeX, XeTeX, LuaTeX, pTeX, upTeX, pTeX-ng用</dd>
 </dl>
-<h4>その他の言語</h4>
+<h3>その他の言語</h3>
 <dl>
   <dt>ctexbeamer</dt>
   <dd><code>./tex/latex/ctex/ctexbeamer.cls</code></dd>
   <dd>中国語</dd>
 </dl>
 
-<h3>Letter系</h3>
-<h4>英語</h4>
+<h2>Letter系</h2>
+<h3>英語</h3>
 <dl>
   <dt>letter</dt>
   <dd><code>./tex/latex/base/letter.cls</code></dd>
@@ -845,7 +842,7 @@
   <dd>Fax</dd>
 </dl>
 
-<h4>その他の言語</h4>
+<h3>その他の言語</h3>
 <dl>
   <dt>brief</dt>
   <dd><code>./tex/latex/ntgclass/brief.cls</code></dd>
@@ -885,7 +882,7 @@
 </dl>
 
 
-<h3>Proc系</h3>
+<h2>Proc系</h2>
 <p>報告集などの雛形</p>
 <dl>
   <dt>amsproc</dt>
@@ -920,8 +917,8 @@
   <dd>複数のドキュメントを一つにまとめるためのクラス</dd>
 </dl>
 
-<h3>特定の雑誌などの投稿用</h3>
-<h4>雑誌, 学位論文やニュースなど</h4>
+<h2>特定の雑誌などの投稿用</h2>
+<h3>雑誌, 学位論文やニュースなど</h3>
 <dl>
   <dt>achemso</dt>
   <dd><code>./tex/latex/achemso/achemso.cls</code></dd>
@@ -1004,7 +1001,7 @@
   <dd>ltnews用</dd>
 </dl>
 
-<h4>パッケージのマニュアルなど</h4>
+<h3>パッケージのマニュアルなど</h3>
 <dl>
   <dt>ltxguide</dt>
   <dd><code>./tex/latex/base/ltxguide.cls</code></dd>
@@ -1046,7 +1043,7 @@
   <dd>tkzパッケージのドキュメント用</dd>
 </dl>
 
-<h3>CV</h3>
+<h2>CV</h2>
 <dl>
   <dt>simplecv</dt>
   <dd><code>./tex/latex/simplecv/simplecv.cls</code></dd>
@@ -1100,9 +1097,9 @@
 
 
 
-<h3>特殊用途</h3>
+<h2>特殊用途</h2>
 
-<h4>dtx</h4>
+<h3>dtx</h3>
 <dl>
   <dt>ltxdoc</dt>
   <dd><code>./tex/latex/base/ltxdoc.cls</code></dd>
@@ -1174,7 +1171,7 @@
 </dl>
 
   
-<h3>Misc</h3>
+<h2>Misc</h2>
 
 <dl>
   <dt>minimal</dt>
@@ -1378,5 +1375,7 @@
 
 </dl>
 
+<hr>
+[<a href="./">index.html</a>]
 </body>
 </html>
