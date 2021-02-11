@@ -10,9 +10,9 @@
 <p><code>\documentclass</code>で指定できるclsファイルのリスト (網羅的ではない).</p>
 <p>
   便宜上,
-  Book系(両面印刷, 長文),
-  Report系(片面印刷, 長文),
-  Article系,
+  Book系(両面印刷, 長文(chapterあり)),
+  Report系(片面印刷, 長文(chapterあり)),
+  Article系(短めの文書(chapterがない)),
   Proc系,
   特定の雑誌の投稿用,
   Slides系, Letter系,
@@ -548,6 +548,20 @@
 
 <h2>Article系</h2>
 <p>短めの文書.</p>
+<p>
+  通常は,
+  文章構造としては,
+  <code>\part</code>
+  <code>\section</code>
+  <code>\subsection</code>
+  <code>\subsubsection</code>
+  <code>\paragraph</code>
+  <code>\subparagraph</code>
+  が使える.
+  paragraph, subparagraph以外はナンバリングされる.
+  Partが変わってもsectionの番号はリセットされない.
+  ナンバリングの形式は, Section.Subsection.Subsubsection
+</p>
 
 <h3>英語用</h3>
 <dl>
@@ -567,14 +581,19 @@
   <dt>ncc</dt>
   <dd><code>./tex/latex/ncclatex/ncc.cls</code></dd>
   <dd>クラスオプションとして, article, report, bookを指定</dd>
+  <dd><code>\chapter</code>は使ってもエラーは出ないが機能しない.</dd>
   
-  <dt>sibjnm</dt>
-  <dd><code>./tex/latex/ncclatex/sibjnm.cls</code></dd>
-  <dd>article</dd>
-
   <dt>tufte-handout</dt>
   <dd><code>./tex/latex/tufte-latex/tufte-handout.cls</code></dd>
   <dd>Edward Tufte風. hand out</dd>
+  <dd>使える文章構造は, 次:
+    <code>\part</code>
+    <code>\chapter</code>
+    <code>\section</code>
+    <code>\subsection</code>
+    <code>\paragraph</code>
+    (デフォルトではどの構造もナンバリングされない)
+  </dd>
 
   <dt>scrartcl</dt>
   <dd><code>./tex/latex/koma-script/scrartcl.cls</code></dd>
@@ -588,18 +607,6 @@
   <dd><code>./tex/latex/paper/paper.cls</code></dd>
   <dd>article</dd>
 
-  <dt>refart</dt>
-  <dd><code>./tex/latex/refman/refart.cls</code></dd>
-  <dd>リファレンスマニュアルのためのクラス</dd>
-
-  <dt>skrapport</dt>
-  <dd><code>./tex/latex/skrapport/skrapport.cls</code></dd>
-  <dd>article</dd>
-
-  <dt>fancyhandout</dt>
-  <dd><code>./tex/latex/fancyhandout/fancyhandout.cls</code></dd>
-  <dd>ハンドアウト</dd>
-
   <dt>akklecture</dt>
   <dd><code>./tex/latex/akktex/akklecture.cls</code></dd>
   <dd>article</dd>
@@ -611,12 +618,32 @@
   <dd>article</dd>
   <dd>chapterなし, プリアンブルに\authorなどを書く必要あり.</dd>
 
+  <dt>refart</dt>
+  <dd><code>./tex/latex/refman/refart.cls</code></dd>
+  <dd>リファレンスマニュアルのためのクラス</dd>
+
+  <dt>fancyhandout</dt>
+  <dd><code>./tex/latex/fancyhandout/fancyhandout.cls</code></dd>
+  <dd>ハンドアウト</dd>
+  <dd>ナンバリングされない</dd>
+
   <dt>hcart</dt>
   <dd><code>./tex/latex/hc/hcart.cls</code></dd>
   <dd>eurofont.styが必要</dd>
   
   <dt>elegantpaper</dt>
   <dd><code>./tex/latex/elegantpaper/elegantpaper.cls</code></dd>
+  <dd>fandolというフォントが必要</dd>
+  
+  <dt>sibjnm</dt>
+  <dd><code>./tex/latex/ncclatex/sibjnm.cls</code></dd>
+  <dd>article</dd>
+  <dd>babel でrussianが必要</dd>
+  
+  <dt>skrapport</dt>
+  <dd><code>./tex/latex/skrapport/skrapport.cls</code></dd>
+  <dd>article</dd>
+  <dd>babelでswedishが必要</dd>
 </dl>
 
 <h3>日本語用</h3>
